@@ -27,3 +27,11 @@ The [apps](/apps/README.md) folder contains all our frontend code.
 The [organization](/organization/README.md) folder contains all our governing documents.
 
 The [smart-contracts](/smart-contracts/README.md) folder contains all our Solidity code.
+
+## License
+
+This project is licensed under the [CC0-1.0 license](LICENSE).
+
+## Code of Conduct
+
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. See our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) for more details.
