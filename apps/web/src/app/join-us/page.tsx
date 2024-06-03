@@ -93,7 +93,7 @@ const BatchingHome = () => {
               </p>
             )}
             <button
-              className="p-4 mr-4 rounded-lg bg-white text-black font-medium"
+              className="p-4 rounded-lg bg-white text-black font-medium"
               onClick={handleClick}
               disabled={isPending}
             >

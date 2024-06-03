@@ -1,6 +1,7 @@
 // This function fetches a new access token from the specified API endpoint.
 
 export async function fetchAccessToken() {
+  console.log("fetchAccessToken");
   return fetch("https://nest-api.zk.me/api/token/get", {
     method: "POST",
     headers: {
@@ -14,19 +15,24 @@ export async function fetchAccessToken() {
     }),
   })
     .then((res) => {
+      console.log("Received response from API");
       if (res.ok) return res.json();
       else {
         throw new Error(`${res.status} ${res.statusText}`);
       }
     })
     .then((result) => {
+      console.log("Processing result");
       if (result.code === 80000000) {
+        console.log("Access token fetched successfully");
         return result.data.data.accessToken;
       } else {
+        console.log("Error in result");
         return Promise.reject(result);
       }
     })
     .catch((error) => {
+      console.log("Error caught", error);
       throw error;
     });
 }
