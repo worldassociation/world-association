@@ -10,7 +10,7 @@ import {
 } from "thirdweb/react";
 import { accountAbstraction, client } from "../constants";
 import Link from "next/link";
-import { arbitrumSepolia, baseSepolia } from "thirdweb/chains";
+import { arbitrumSepolia, base, baseSepolia } from "thirdweb/chains";
 import { ThirdwebContract, getContract } from "thirdweb";
 
 const GaslessHome: React.FC = () => {
@@ -25,6 +25,7 @@ const GaslessHome: React.FC = () => {
       </h1>
       <ConnectButton
         client={client}
+        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",

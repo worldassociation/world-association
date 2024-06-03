@@ -15,6 +15,7 @@ import {
   editionDropTokenId,
 } from "../constants";
 import Link from "next/link";
+import { base } from "thirdweb/chains";
 
 const GaslessHome: React.FC = () => {
   const smartAccount = useActiveAccount();
@@ -34,6 +35,7 @@ const GaslessHome: React.FC = () => {
       </h1>
       <ConnectButton
         client={client}
+        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",

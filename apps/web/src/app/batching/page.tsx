@@ -15,6 +15,7 @@ import {
 } from "../constants";
 import Link from "next/link";
 import { getBalance, claimTo as claimToken } from "thirdweb/extensions/erc20";
+import { base } from "thirdweb/chains";
 
 const BatchingHome = () => {
   const smartAccount = useActiveAccount();
@@ -71,6 +72,7 @@ const BatchingHome = () => {
       </h1>
       <ConnectButton
         client={client}
+        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",

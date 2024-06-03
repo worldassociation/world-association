@@ -75,7 +75,7 @@ const BatchingHome = () => {
       <PoPButton />
       <ConnectButton
         client={client}
-        chains={[base]}
+        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",

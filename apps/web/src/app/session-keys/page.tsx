@@ -20,6 +20,7 @@ import {
   editionDropAddress,
 } from "../constants";
 import Link from "next/link";
+import { base } from "thirdweb/chains";
 
 const AddSigner = () => {
   const smartAccount = useActiveAccount();
@@ -44,6 +45,7 @@ const AddSigner = () => {
       </h1>
       <ConnectButton
         client={client}
+        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",
