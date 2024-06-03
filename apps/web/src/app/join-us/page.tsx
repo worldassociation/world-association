@@ -17,6 +17,7 @@ import Link from "next/link";
 import { getBalance, claimTo as claimToken } from "thirdweb/extensions/erc20";
 import PoPButton from "../../components/PoPButton";
 import "@zkmelabs/widget/dist/style.css";
+import { base } from "thirdweb/chains";
 
 const BatchingHome = () => {
   const smartAccount = useActiveAccount();
@@ -74,6 +75,7 @@ const BatchingHome = () => {
       <PoPButton />
       <ConnectButton
         client={client}
+        chains={[base]}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",
