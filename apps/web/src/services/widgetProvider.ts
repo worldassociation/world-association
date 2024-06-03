@@ -46,6 +46,7 @@ export function launchZkMeWidget(
       lv: verificationLevel,
       theme: theme,
       mode: loginMode,
+      checkAddress: false,
     },
   );
 

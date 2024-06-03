@@ -37,7 +37,7 @@ function Header() {
       </h1>
 
       <p className="text-zinc-300 text-base text-center">
-        Democratic United Nations alternative with an own digital currency.
+        Democratic United Nations alternative.
       </p>
     </header>
   );
