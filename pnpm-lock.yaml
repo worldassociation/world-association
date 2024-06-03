@@ -57,6 +57,9 @@ importers:
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
+      '@zkmelabs/widget':
+        specifier: ^0.2.3
+        version: 0.2.3
       next:
         specifier: ^14.1.1
         version: 14.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -1340,6 +1343,9 @@ packages:
 
   '@walletconnect/window-metadata@1.0.1':
     resolution: {integrity: sha512-9koTqyGrM2cqFRW517BPY/iEtUDx2r1+Pwwu5m7sJ7ka79wi3EyqhqcICk/yDmv6jAS1rjKgTKXlEhanYjijcA==}
+
+  '@zkmelabs/widget@0.2.3':
+    resolution: {integrity: sha512-aVcu0JC23L6Kfd8QpEQGdZ6/TyhxaYJM3GrD/90CmJ6dxS//CIC27We4mX5i7i5uDZ6Naa9brhaierTY0RZh/w==}
 
   abitype@1.0.0:
     resolution: {integrity: sha512-NMeMah//6bJ56H5XRj8QCV4AwuW6hB6zqz2LnhhLdcWVQOsXki6/Pn3APeqxCma62nXIcmZWdu1DlHWS74umVQ==}
@@ -6640,6 +6646,8 @@ snapshots:
     dependencies:
       '@walletconnect/window-getters': 1.0.1
       tslib: 1.14.1
+
+  '@zkmelabs/widget@0.2.3': {}
 
   abitype@1.0.0(typescript@5.3.3)(zod@3.23.8):
     optionalDependencies:
