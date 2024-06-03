@@ -10,7 +10,7 @@ const PoPButton: React.FC = () => {
 
   return (
     <button
-      className="p-4 mr-4 rounded-lg bg-white text-black font-medium"
+      className="p-4 rounded-lg bg-white text-black font-medium"
       onClick={() => launchZkMeWidget(activeAccountAddress, fetchAccessToken)}
     >
       <p>Prove your personhood</p>
