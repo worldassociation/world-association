@@ -20,8 +20,7 @@ export async function fetchAccessToken() {
     .then((result) => {
       console.log(result);
       console.log(result.data);
-      console.log(result.data.accessToken);
       console.log(result.data.accessToken as string);
-      return result.data.accessToken as string;
+      return result.data.accessToken.toString();
     });
 }
