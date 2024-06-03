@@ -18,6 +18,6 @@ export async function fetchAccessToken(): Promise<string> {
     })
     .then((result) => {
       console.log(result);
-      return result.data.accessToken;
+      return result.data.accessToken.toString();
     });
 }

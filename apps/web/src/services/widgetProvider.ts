@@ -1,4 +1,10 @@
-import { Provider, ZkMeWidget } from "@zkmelabs/widget";
+import {
+  LoginMode,
+  Provider,
+  Theme,
+  VerificationLevel,
+  ZkMeWidget,
+} from "@zkmelabs/widget";
 
 /**
  * Launches the ZkMe widget with the provided parameters.
@@ -27,14 +33,19 @@ export function launchZkMeWidget(
     },
   };
 
+  const verificationLevel: VerificationLevel = "Anti-Sybil";
+  const theme: Theme = "dark";
+  const loginMode: LoginMode = "wallet";
+
   const zkMeWidget = new ZkMeWidget(
     "M2024012969876367071371562763835",
     "World Association",
     "0x2105",
     provider,
     {
-      lv: "Anti-Sybil",
-      mode: "wallet",
+      lv: verificationLevel,
+      theme: theme,
+      mode: loginMode,
     },
   );
 
