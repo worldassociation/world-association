@@ -14,12 +14,9 @@ export async function fetchAccessToken() {
     }),
   })
     .then((res) => {
-      console.log(res);
       return res.json();
     })
     .then((result) => {
-      console.log(result);
-      console.log(result.data.accessToken);
-      return result.data.accessToken;
+      return result.data.accessToken as string;
     });
 }
