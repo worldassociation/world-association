@@ -72,7 +72,6 @@ const BatchingHome = () => {
       <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-12 text-zinc-100">
         Join Us
       </h1>
-      <PoPButton />
       <ConnectButton
         client={client}
         chain={base}
@@ -85,6 +84,7 @@ const BatchingHome = () => {
           showThirdwebBranding: false,
         }}
       />
+      <PoPButton />
       <div className="flex flex-col mt-8 gap-4">
         {smartAccount ? (
           <>

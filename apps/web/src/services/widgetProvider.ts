@@ -34,19 +34,17 @@ export function launchZkMeWidget(
   };
 
   const verificationLevel: VerificationLevel = "Anti-Sybil";
-  const theme: Theme = "dark";
+
   const loginMode: LoginMode = "wallet";
 
   const zkMeWidget = new ZkMeWidget(
-    "M2024012969876367071371562763835",
+    "M2024053066119595336406774111128",
     "World Association",
     "0x2105",
     provider,
     {
       lv: verificationLevel,
-      theme: theme,
       mode: loginMode,
-      checkAddress: false,
     },
   );
 
