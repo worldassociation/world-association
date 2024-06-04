@@ -72,7 +72,6 @@ const BatchingHome = () => {
       </h1>
       <ConnectButton
         client={client}
-        chain={base}
         accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",

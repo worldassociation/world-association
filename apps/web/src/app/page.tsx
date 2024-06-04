@@ -11,7 +11,6 @@ export default function Home() {
       <div className="flex justify-center mb-20">
         <ConnectButton
           client={client}
-          chain={base}
           accountAbstraction={accountAbstraction}
           connectButton={{
             label: "Sign in",
@@ -37,7 +36,7 @@ function Header() {
       </h1>
 
       <p className="text-zinc-300 text-base text-center">
-        Democratic United Nations alternative.
+        The democratic United Nations alternative.
       </p>
     </header>
   );

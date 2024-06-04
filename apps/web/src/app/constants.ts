@@ -1,5 +1,5 @@
 import { createThirdwebClient, getContract } from "thirdweb";
-import { base } from "thirdweb/chains";
+import { baseSepolia } from "thirdweb/chains";
 import { SmartWalletOptions } from "thirdweb/wallets";
 
 // Replace this with your client ID string
@@ -14,7 +14,7 @@ export const client = createThirdwebClient({
   clientId: clientId,
 });
 
-export const chain = base;
+export const chain = baseSepolia;
 export const tokenDropAddress = "0xd64A548A82c190083707CBEFD26958E5e6551D18";
 export const editionDropAddress = "0x638263e3eAa3917a53630e61B1fBa685308024fa";
 export const editionDropTokenId = 0n;
