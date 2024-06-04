@@ -1,25 +1,9 @@
-import { ConnectButton } from "thirdweb/react";
-import { accountAbstraction, client } from "./constants";
 import Link from "next/link";
-import { base } from "thirdweb/chains";
 
 export default function Home() {
   return (
     <div className="py-20">
       <Header />
-
-      <div className="flex justify-center mb-20">
-        <ConnectButton
-          client={client}
-          accountAbstraction={accountAbstraction}
-          connectButton={{
-            label: "Sign in",
-          }}
-          connectModal={{
-            showThirdwebBranding: false,
-          }}
-        />
-      </div>
 
       <Menu />
 
@@ -47,20 +31,20 @@ function Menu() {
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <MenuItem
         title="Prove your personhood"
-        href="/join-us"
-        description="Anyone can join us completely anonymously by proving only that they are a real and unique human."
+        href="/proof-of-personhood"
+        description="Join us completely anonymously by proving only that they are a real and unique human."
       />
 
       <MenuItem
-        title="Sponsored transactions"
-        href="/gasless"
-        description="Execute transactions without requiring users to hold ETH."
+        title="Collect your governance token"
+        href="/governance-token"
+        description="Get your onchain membership card and start experimenting with global democracy."
       />
 
       <MenuItem
-        title="Batching transactions"
-        href="/batching"
-        description="Execute multiple transactions atomically."
+        title="Claim your basic income"
+        href="/basic-income"
+        description="Make our official currency, the world dracha, flowing into your account every second."
       />
     </div>
   );
@@ -82,13 +66,13 @@ function MenuItem(props: { title: string; href: string; description: string }) {
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 md:mb-20">
       <Link
         className="text-center text-sm text-gray-400"
         target="_blank"
         href="https://github.com/worldassociation/world-association"
       >
-        View us on GitHub
+        Operating fully on GitHub
       </Link>
     </div>
   );

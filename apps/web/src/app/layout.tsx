@@ -7,8 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "World Association",
-  description:
-    "Democratic United Nations alternative with an own digital currency.",
+  description: "Democratic United Nations alternative.",
 };
 
 export default function RootLayout({
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="p-4 pb-10 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
+        <main className="p-4 min-h-[100vh] flex items-center justify-center container max-w-screen-lg mx-auto">
           <ThirdwebProvider>{children}</ThirdwebProvider>
         </main>
       </body>
