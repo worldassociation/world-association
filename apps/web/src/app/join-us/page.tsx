@@ -84,7 +84,7 @@ const BatchingHome = () => {
           showThirdwebBranding: false,
         }}
       />
-      <PoPButton />
+      {/* <PoPButton /> */}
       <div className="flex flex-col mt-8 gap-4">
         {smartAccount ? (
           <>
