@@ -11,7 +11,6 @@ export default function Home() {
       <div className="flex justify-center mb-20">
         <ConnectButton
           client={client}
-          chain={base}
           accountAbstraction={accountAbstraction}
           connectButton={{
             label: "Sign in",
