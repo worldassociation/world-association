@@ -44,7 +44,7 @@ function Menu() {
       <MenuItem
         title="Claim your basic income"
         href="/basic-income"
-        description="Make our official currency, the world dracha, flowing into your account every second."
+        description="Make our official currency, the world drachma, flowing into your account every second."
       />
     </div>
   );
