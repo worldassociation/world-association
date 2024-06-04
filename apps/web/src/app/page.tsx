@@ -58,18 +58,6 @@ function Menu() {
       />
 
       <MenuItem
-        title="Multichain transactions"
-        href="/multichain"
-        description="Execute transactions on different chains maintaining the same smart account address."
-      />
-
-      <MenuItem
-        title="Session keys"
-        href="/session-keys"
-        description="Add other admins and signers to your smart accounts."
-      />
-
-      <MenuItem
         title="Batching transactions"
         href="/batching"
         description="Execute multiple transactions atomically."
@@ -100,7 +88,7 @@ function Footer() {
         target="_blank"
         href="https://github.com/worldassociation/world-association"
       >
-        View code on GitHub
+        View us on GitHub
       </Link>
     </div>
   );
