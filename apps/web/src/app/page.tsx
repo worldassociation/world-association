@@ -46,7 +46,7 @@ function Menu() {
   return (
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <MenuItem
-        title="Join us"
+        title="Prove your personhood"
         href="/join-us"
         description="Anyone can join us completely anonymously by proving only that they are a real and unique human."
       />
