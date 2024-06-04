@@ -72,7 +72,7 @@ function Footer() {
         target="_blank"
         href="https://github.com/worldassociation/world-association"
       >
-        Operating fully on GitHub
+        Check the WA on GitHub
       </Link>
     </div>
   );
