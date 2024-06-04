@@ -1,9 +1,10 @@
 "use client";
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
-import { chain, client } from "../constants";
+import { client } from "../constants";
 import Link from "next/link";
 import PoPButton from "../../components/PoPButton";
 import "@zkmelabs/widget/dist/style.css";
+import { base } from "thirdweb/chains";
 
 const ProveYourPersonhoodHome = () => {
   const account = useActiveAccount();
@@ -15,7 +16,7 @@ const ProveYourPersonhoodHome = () => {
       </h1>
       <ConnectButton
         client={client}
-        chain={chain}
+        chain={base}
         connectButton={{
           label: "Sign in",
         }}
