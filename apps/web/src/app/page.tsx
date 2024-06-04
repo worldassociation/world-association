@@ -31,7 +31,7 @@ export default function Home() {
 function Header() {
   return (
     <header className="flex flex-col items-center mb-20 md:mb-20">
-      <h1 className="text-4xl md:text-7xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
+      <h1 className="text-5xl md:text-7xl text-center font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
         World Association
       </h1>
 
