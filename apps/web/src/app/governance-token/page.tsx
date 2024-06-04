@@ -71,13 +71,7 @@ const GovernanceTokenHome: React.FC = () => {
               </TransactionButton>
             </>
           ) : (
-            <p
-              style={{
-                textAlign: "center",
-                width: "100%",
-                marginTop: "10px",
-              }}
-            >
+            <p className="flex flex-col mt-8 gap-4">
               Sign in to collect your governance token
             </p>
           )}
