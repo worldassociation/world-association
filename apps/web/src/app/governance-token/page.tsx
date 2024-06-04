@@ -67,7 +67,7 @@ const GovernanceTokenHome: React.FC = () => {
                   alert("Successful!");
                 }}
               >
-                Collect!
+                Collect
               </TransactionButton>
             </>
           ) : (
@@ -78,7 +78,7 @@ const GovernanceTokenHome: React.FC = () => {
                 marginTop: "10px",
               }}
             >
-              Sign in to collect your governance token!
+              Sign in to collect your governance token
             </p>
           )}
         </>

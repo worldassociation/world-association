@@ -66,7 +66,7 @@ function MenuItem(props: { title: string; href: string; description: string }) {
 
 function Footer() {
   return (
-    <div className="flex flex-col items-center mt-20 md:mb-20">
+    <div className="flex flex-col items-center mt-20 md:mb-12">
       <Link
         className="text-center text-sm text-gray-400"
         target="_blank"

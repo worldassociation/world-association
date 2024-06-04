@@ -79,7 +79,7 @@ const GaslessHome: React.FC = () => {
                     alert("Claim successful!");
                   }}
                 >
-                  Claim!
+                  Claim
                 </TransactionButton>
               </>
             ) : (
@@ -90,7 +90,7 @@ const GaslessHome: React.FC = () => {
                   marginTop: "10px",
                 }}
               >
-                Sign in to claim this kitten!
+                Sign in to claim this kitten
               </p>
             )}
           </>

@@ -26,7 +26,7 @@ const ProveYourPersonhoodHome = () => {
         }}
       />
       <div className="flex flex-col mt-8 gap-4">
-        {account ? <PoPButton /> : <p>Sign in to get started</p>}
+        {account ? <PoPButton /> : <p>Sign in to prove your personhood</p>}
       </div>
       <Link href={"/"} className="text-sm text-gray-400 mt-8">
         Back to menu
