@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="py-20">
+    <div className="pt-20 pb-6 md:pb-20">
       <Header />
 
       <Menu />

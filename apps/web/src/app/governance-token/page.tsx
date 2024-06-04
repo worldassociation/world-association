@@ -28,7 +28,7 @@ const GovernanceTokenHome: React.FC = () => {
   );
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-12 text-zinc-100">
+      <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-12 text-zinc-100 text-center">
         Collect your Governance Token
       </h1>
       <ConnectButton
