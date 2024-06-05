@@ -34,7 +34,6 @@ const GovernanceTokenHome: React.FC = () => {
       <ConnectButton
         client={client}
         chain={baseSepolia}
-        accountAbstraction={accountAbstraction}
         connectButton={{
           label: "Sign in",
         }}
