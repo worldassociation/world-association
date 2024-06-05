@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "World Association",
-  description: "Democratic United Nations alternative.",
+  description: "The democratic United Nations alternative.",
 };
 
 export default function RootLayout({

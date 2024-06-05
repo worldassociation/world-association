@@ -37,6 +37,8 @@ export function launchZkMeWidget(
 
   const loginMode: LoginMode = "wallet";
 
+  const theme: Theme = "dark";
+
   const zkMeWidget = new ZkMeWidget(
     "M2024053066119595336406774111128",
     "World Association",
@@ -45,6 +47,7 @@ export function launchZkMeWidget(
     {
       lv: verificationLevel,
       mode: loginMode,
+      theme: theme,
     },
   );
 
