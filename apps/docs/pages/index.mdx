@@ -1,11 +1,30 @@
-# Introduction
- 
-Welcome to Nextra! This is a basic docs template. You can use it as a starting point for your own project :)
+import { ConnectEmbed, lightTheme } from "thirdweb/react";
+import { chain, client } from "../utils/constants";
 
-## What is Nextra?
+export const customTheme = lightTheme({
+  colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
+});
 
-A **simple**, **powerful** and **flexible** site generation framework with everything you love from Next.js.
+export const Hero = () => {
+  return (
+    <div className="hero">
+      <div className="wrapper">
+        <div className="hero-text">
+          <h1>World Association</h1>
+          <p>The democratic United Nations alternative.</p>
+        </div>
+        <ConnectEmbed
+          client={client}
+          chain={chain}
+          theme={customTheme}
+          showThirdwebBranding={false}
+          onConnect={(account) => {
+            console.log("Connected to account", account);
+          }}
+        />
+      </div>
+    </div>
+  );
+};
 
-## Documentation
-
-The documentation is available at [https://nextra.site](https://nextra.site).
+<Hero />

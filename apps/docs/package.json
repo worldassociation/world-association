@@ -7,12 +7,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "@repo/ui": "workspace:*",
     "next": "^14.1.1",
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18",
     "react-dom": "^18",
-    "@repo/ui": "workspace:*"
+    "thirdweb": "^5.20.0"
   },
   "devDependencies": {
     "@types/node": "^20",

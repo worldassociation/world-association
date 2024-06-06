@@ -2,6 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
+import HeaderConnectButton from "./components/HeaderConnectButton";
 
 const config: DocsThemeConfig = {
   logo: (
@@ -19,6 +20,10 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/worldassociation/world-association",
   },
+  navbar: {
+    extraContent: <HeaderConnectButton />,
+  },
+  search: { placeholder: "Search..." },
   docsRepositoryBase:
     "https://github.com/worldassociation/world-association/tree/main/apps/docs",
   footer: {
@@ -38,7 +43,7 @@ const config: DocsThemeConfig = {
   editLink: {
     text: "Edit this page on GitHub",
   },
-  gitTimestamp: false,
+  gitTimestamp: null,
   useNextSeoProps() {
     const { asPath } = useRouter();
     if (asPath !== "/") {

@@ -11,12 +11,5 @@
   "learn-more": {
     "title": "Learn more",
     "type": "page"
-  },
-
-  "contact": {
-    "title": "Contact",
-    "type": "page",
-    "href": "https://twitter.com/worldassociatio",
-    "newWindow": true
   }
 }
