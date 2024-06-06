@@ -11,7 +11,7 @@
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-weight: 440;
+  font-weight: 420;
 
   .nx-rounded-xl {
     border-radius: 5px;
@@ -132,7 +132,7 @@
 
 /* Main nav */
 nav a span {
-  font-weight: 600;
+  font-weight: 560;
 }
 
 /* Links */
@@ -208,7 +208,7 @@ ul {
   /* margin-top: 4px; */
 }
 
-/* Customize code styles to match Optimism */
+/* Customize code styles */
 code,
 kbd,
 samp,
@@ -272,50 +272,7 @@ table tr {
   background-color: transparent !important;
 }
 
-/* Feedback Widget */
-.feelback-container {
-  padding-top: 0.1em;
-}
-
-.feelback-q {
-  padding-left: 0 !important;
-}
-
-.feelback-text {
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--wa-neutral-500);
-}
-
-.feelback-buttons button:hover {
-  background: var(--wa-neutral-100) !important;
-}
-
-.feelback-icon svg {
-  fill: var(--wa-neutral-500);
-}
-
-.feelback-buttons button:hover svg {
-  fill: var(--wa-neutral-900);
-}
-
-:is(html[class~="dark"]) .feelback-text {
-  font-weight: 500;
-  color: var(--wa-neutral-400);
-}
-
-:is(html[class~="dark"]) .feelback-icon svg {
-  fill: var(--wa-neutral-400);
-}
-
-:is(html[class~="dark"]) .feelback-buttons button:hover {
-  background: var(--wa-neutral-700) !important;
-}
-
-:is(html[class~="dark"]) .feelback-buttons button:hover svg {
-  fill: var(--wa-neutral-100);
-}
-
+/* Table of contents */
 .nextra-toc .divider {
   display: block;
   width: 100%;
