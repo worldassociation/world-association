@@ -1,9 +1,18 @@
 {
-  "index": "World Association",
+  "index": {
+    "title": "World Association",
+    "type": "page",
+    "display": "hidden",
+    "theme": {
+      "layout": "full"
+    }
+  },
+
   "learn-more": {
     "title": "Learn more",
     "type": "page"
   },
+
   "contact": {
     "title": "Contact",
     "type": "page",

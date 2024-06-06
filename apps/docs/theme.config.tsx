@@ -4,7 +4,18 @@ import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>World Association</span>,
+  logo: (
+    <svg viewBox="0 0 600 600" width="38" height="38">
+      <style>
+        {`.s0 { fill: none;stroke: currentcolor;stroke-miterlimit:100;stroke-width: 100 }`}
+      </style>
+      <path
+        id="Background"
+        className="s0"
+        d="m300 550c-138.3 0-250-111.8-250-250 0-138.3 111.7-250 250-250 138.2 0 250 111.7 250 250 0 138.2-111.8 250-250 250z"
+      />
+    </svg>
+  ),
   project: {
     link: "https://github.com/worldassociation/world-association",
   },
@@ -27,6 +38,7 @@ const config: DocsThemeConfig = {
   editLink: {
     text: "Edit this page on GitHub",
   },
+  gitTimestamp: false,
   useNextSeoProps() {
     const { asPath } = useRouter();
     if (asPath !== "/") {
