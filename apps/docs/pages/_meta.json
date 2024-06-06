@@ -1,15 +1,17 @@
 {
-  "index": "Introduction",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "index": "World Association",
+  "learn-more": {
+    "title": "Learn more",
+    "type": "page"
+  },
   "about": {
     "title": "About",
     "type": "page"
   },
   "contact": {
-    "title": "Contact ↗",
+    "title": "Contact",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "https://twitter.com/worldassociatio",
     "newWindow": true
   }
 }
