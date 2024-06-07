@@ -178,7 +178,7 @@ nav a span {
 
   .hero p {
     font-size: 18px !important;
-    padding-bottom: 64px;
+    padding-bottom: 96px;
   }
 }
 
@@ -187,7 +187,7 @@ nav a span {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 64px;
+    padding-top: 96px;
   }
 }
 /* Links */
