@@ -138,32 +138,48 @@ nav a span {
 }
 
 /* Hero */
-.hero {
-  min-height: calc(100svh - 168px);
-}
-
 .hero h1 {
   font-size: 68px !important;
   font-weight: 700;
   margin: 0 !important;
+  line-height: normal;
 }
 
 .hero p {
-  font-size: 22px !important;
+  font-size: 20px !important;
   font-weight: 400;
-  margin: 0 0 16px 0;
   color: #211f26;
+  margin: 8px 0 0 0 !important;
 }
 
 .wrapper {
+  min-height: calc(100svh - 128px);
   width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding-top: 16svh;
 }
 
+@media screen and (max-width: 1024px) {
+  .hero h1 {
+    font-size: 56px !important;
+  }
+
+  .hero p {
+    font-size: 18px !important;
+    padding-bottom: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 64px;
+  }
+}
 /* Links */
 a.nx-underline {
   text-decoration: none;
