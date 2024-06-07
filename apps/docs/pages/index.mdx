@@ -13,15 +13,18 @@ export const Hero = () => {
           <h1>World Association</h1>
           <p>The democratic United Nations alternative.</p>
         </div>
-        <ConnectEmbed
-          client={client}
-          chain={chain}
-          theme={customTheme}
-          showThirdwebBranding={false}
-          onConnect={(account) => {
-            console.log("Connected to account", account);
-          }}
-        />
+        <div>
+          <h3>Sign in</h3>
+          <ConnectEmbed
+            client={client}
+            chain={chain}
+            theme={customTheme}
+            showThirdwebBranding={false}
+            onConnect={(account) => {
+              console.log("Connected to account", account);
+            }}
+          />
+        </div>
       </div>
     </div>
   );
