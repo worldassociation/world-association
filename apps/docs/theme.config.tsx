@@ -46,7 +46,11 @@ const config: DocsThemeConfig = {
   gitTimestamp: null,
   useNextSeoProps() {
     const { asPath } = useRouter();
-    if (asPath !== "/") {
+    if (asPath === "/") {
+      return {
+        titleTemplate: "World Association",
+      };
+    } else {
       return {
         titleTemplate: "%s | World Association",
       };
