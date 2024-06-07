@@ -152,7 +152,7 @@ nav a span {
   color: #211f26 !important;
   margin: 0 !important;
   text-align: center;
-  padding: 6px 0;
+  padding: 0 0 6px 0;
 }
 
 .hero p {
@@ -173,7 +173,7 @@ nav a span {
 
 @media screen and (max-width: 1024px) {
   .hero h1 {
-    font-size: 56px !important;
+    font-size: 60px !important;
   }
 
   .hero p {
@@ -189,7 +189,12 @@ nav a span {
     text-align: center;
     padding-top: 96px;
   }
+
+  .hero h1 {
+    font-size: 52px !important;
+  }
 }
+
 /* Links */
 a.nx-underline {
   text-decoration: none;
