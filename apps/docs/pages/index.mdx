@@ -1,4 +1,9 @@
-import { ConnectButton, ConnectEmbed, lightTheme } from "thirdweb/react";
+import {
+  ConnectButton,
+  ConnectEmbed,
+  lightTheme,
+  useActiveAccount,
+} from "thirdweb/react";
 import { chain, client } from "../utils/constants";
 
 export const customTheme = lightTheme({
@@ -6,6 +11,7 @@ export const customTheme = lightTheme({
 });
 
 export const Hero = () => {
+  const account = useActiveAccount();
   return (
     <div className="hero">
       <div className="wrapper">
@@ -24,7 +30,7 @@ export const Hero = () => {
         </div>
         <div>
           <div className="connect-embed">
-            <h3>Sign in</h3>
+            {account ? null : <h3>Sign in</h3>}
             <ConnectEmbed
               client={client}
               chain={chain}
