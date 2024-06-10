@@ -171,6 +171,10 @@ nav a span {
   margin: 0 auto;
 }
 
+.connect-button {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .hero h1 {
     font-size: 60px !important;
@@ -187,11 +191,26 @@ nav a span {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 96px;
+  }
+
+  .hero-text {
+    padding-top: 32px;
   }
 
   .hero h1 {
     font-size: 52px !important;
+  }
+
+  .connect-button {
+    display: block;
+  }
+
+  .connect-embed {
+    display: none;
+  }
+
+  .hero p {
+    padding-bottom: 24px;
   }
 }
 

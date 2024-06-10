@@ -1,4 +1,4 @@
-import { ConnectEmbed, lightTheme } from "thirdweb/react";
+import { ConnectButton, ConnectEmbed, lightTheme } from "thirdweb/react";
 import { chain, client } from "../utils/constants";
 
 export const customTheme = lightTheme({
@@ -12,22 +12,30 @@ export const Hero = () => {
         <div className="hero-text">
           <h1>World Association</h1>
           <p>The democratic United Nations alternative.</p>
+          <div className="connect-button">
+            <ConnectButton
+              client={client}
+              chain={chain}
+              showThirdwebBranding={false}
+              connectButton={{label: "Sign in", style: {backgroundColor: "#090909", color: "#ffffff"}}}
+            />
+          </div>
         </div>
         <div>
-          <h3>Sign in</h3>
-          <ConnectEmbed
-            client={client}
-            chain={chain}
-            theme={customTheme}
-            showThirdwebBranding={false}
-            onConnect={(account) => {
-              console.log("Connected to account", account);
-            }}
-          />
+          <div className="connect-embed">
+            <h3>Sign in</h3>
+            <ConnectEmbed
+              client={client}
+              chain={chain}
+              theme={customTheme}
+              showThirdwebBranding={false}
+            />
+          </div>
         </div>
       </div>
     </div>
-  );
+
+);
 };
 
 <Hero />
