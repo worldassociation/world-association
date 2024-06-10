@@ -283,11 +283,6 @@ ul {
   color: var(--wa-neutral-300) !important;
 }
 
-/* Callouts */
-.nextra-callout svg {
-  /* margin-top: 4px; */
-}
-
 /* Customize code styles */
 code,
 kbd,
