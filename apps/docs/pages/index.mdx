@@ -5,6 +5,7 @@ import {
   useActiveAccount,
 } from "thirdweb/react";
 import { chain, client } from "../utils/constants";
+import { Toaster, toast } from "sonner";
 
 export const customTheme = lightTheme({
   colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
@@ -27,6 +28,12 @@ export const Hero = () => {
               connectModal={{showThirdwebBranding: false}}
             />
           </div>
+          <div>
+      <Toaster />
+      <button onClick={() => toast('My first toast')}>
+        Give me a toast
+      </button>
+    </div>
         </div>
         <div>
           <div className="connect-embed">
