@@ -5,6 +5,8 @@ import {
   useActiveAccount,
 } from "thirdweb/react";
 import { chain, client } from "../utils/constants";
+import "@zkmelabs/widget/dist/style.css";
+import PoPButton from "../components/PoPButton";
 import { Toaster, toast } from "sonner";
 
 export const customTheme = lightTheme({
@@ -28,12 +30,7 @@ export const Hero = () => {
               connectModal={{showThirdwebBranding: false}}
             />
           </div>
-          <div>
-      <Toaster />
-      <button onClick={() => toast('My first toast')}>
-        Give me a toast
-      </button>
-    </div>
+          {account ? <PoPButton /> : null}
         </div>
         <div>
           <div className="connect-embed">
