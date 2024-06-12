@@ -10,3 +10,6 @@
 [submodule "smart-contracts/lib/openzeppelin-contracts"]
 	path = smart-contracts/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "smart-contracts/lib/governor"]
+	path = smart-contracts/lib/governor
+	url = https://github.com/voteagora/governor
