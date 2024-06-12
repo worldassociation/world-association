@@ -8,7 +8,19 @@ const HeaderConnectButton = () => {
   return !activeAccountAddress ? (
     <></>
   ) : (
-    <ConnectButton client={client} chain={chain} theme={"light"} />
+    <ConnectButton
+      client={client}
+      chain={chain}
+      theme={"light"}
+      detailsButton={{
+        style: {
+          height: "52px",
+          color: "#090909",
+          backgroundColor: "#ffffff",
+          borderColor: "#e5e7eb",
+        },
+      }}
+    />
   );
 };
 
