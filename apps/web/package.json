@@ -1,32 +1,26 @@
 {
-  "name": "web",
+  "name": "docs",
   "version": "0.0.0",
   "scripts": {
-    "dev": "rm -rf .next && next dev --port 3001",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
     "@zkmelabs/widget": "^0.2.3",
     "next": "^14.1.1",
+    "nextra": "latest",
+    "nextra-theme-docs": "latest",
     "react": "^18",
     "react-dom": "^18",
     "thirdweb": "^5.20.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
     "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
     "typescript": "^5"
   }
 }
