@@ -4,3 +4,6 @@
 [submodule "smart-contracts/lib/openzeppelin-contracts"]
 	path = smart-contracts/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "smart-contracts/lib/openzeppelin-foundry-upgrades"]
+	path = smart-contracts/lib/openzeppelin-foundry-upgrades
+	url = https://github.com/OpenZeppelin/openzeppelin-foundry-upgrades
