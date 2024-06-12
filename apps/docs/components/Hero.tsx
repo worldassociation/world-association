@@ -7,7 +7,6 @@ import {
 import { chain, client } from "../utils/constants";
 import "@zkmelabs/widget/dist/style.css";
 import PoPButton from "../components/PoPButton";
-import { Toaster, toast } from "sonner";
 
 export default function Hero() {
   const account = useActiveAccount();

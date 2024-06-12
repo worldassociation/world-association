@@ -26,8 +26,9 @@ This monorepo has three main folders:
 │   └── roadmap
 └── smart-contracts
     └── src
+        ├── Constitution.sol
         ├── Drachma.sol
-        └── Governor.sol
+        └── WorldDemocracyToken.sol
 ```
 
 The [apps](/apps) folder contains all our frontend code.
