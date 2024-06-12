@@ -9,12 +9,11 @@ import "@zkmelabs/widget/dist/style.css";
 import PoPButton from "../components/PoPButton";
 import { Toaster, toast } from "sonner";
 
-export const customTheme = lightTheme({
-  colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
-});
-
 export const Hero = () => {
   const account = useActiveAccount();
+  const customTheme = lightTheme({
+  colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
+});
 
 return (
 
