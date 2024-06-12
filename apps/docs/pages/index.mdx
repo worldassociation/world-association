@@ -15,38 +15,49 @@ export const customTheme = lightTheme({
 
 export const Hero = () => {
   const account = useActiveAccount();
-  return (
-    <div className="hero">
-      <div className="wrapper">
-        <div className="hero-text">
-          <h1>World Association</h1>
-          <p>The democratic United Nations alternative.</p>
-          <div className="connect-button">
-            <ConnectButton
-              client={client}
-              chain={chain}
-              theme={"light"}
-              connectButton={{label: "Sign in", style: {backgroundColor: "#090909", color: "#ffffff"}}}
-              connectModal={{showThirdwebBranding: false}}
-            />
-          </div>
-          {account ? <PoPButton /> : null}
-        </div>
-        <div>
-          <div className="connect-embed">
-            {account ? null : <h3>Sign in</h3>}
-            <ConnectEmbed
-              client={client}
-              chain={chain}
-              theme={customTheme}
-              showThirdwebBranding={false}
-            />
-          </div>
-        </div>
+
+return (
+
+<div className="hero">
+  <div className="wrapper">
+    <div className="hero-text">
+      <h1>World Association</h1>
+      <p>The democratic United Nations alternative.</p>
+      <div className="connect-button">
+        {!account && (
+          <ConnectButton
+            client={client}
+            chain={chain}
+            theme={"light"}
+            connectButton={{
+              label: "Sign in",
+              style: { backgroundColor: "#090909", color: "#ffffff" },
+            }}
+            connectModal={{ showThirdwebBranding: false }}
+          />
+        )}
       </div>
     </div>
-
-);
-};
+    <div>
+      {account ? (
+        <div className="pop">
+          <h3>Prove your personhood</h3>
+          <PoPButton />
+        </div>
+      ) : (
+        <div className="connect-embed">
+          <h3>Sign in</h3>
+          <ConnectEmbed
+            client={client}
+            chain={chain}
+            theme={customTheme}
+            showThirdwebBranding={false}
+          />
+        </div>
+      )}
+    </div>
+  </div>
+</div>
+); };
 
 <Hero />
