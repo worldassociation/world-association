@@ -1,49 +1,23 @@
-# Account Abstraction with the thirdweb Connect SDK
+# Nextra Docs Template 
 
-This repo is a collection of reference implementations for account abstraction features using the [Connect SDK](https://portal.thidweb.com/connect).
+This is a template for creating documentation with [Nextra](https://nextra.site).
 
-Showcases how to build:
+[**Live Demo →**](https://nextra-docs-template.vercel.app)
 
-- Gasless transactions
-- Session keys
-- Batch transactions
+[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
 
-## Live demo
+## Quick Start
 
-[Play around with the live preview](https://account-abstraction.thirdweb-preview.com)
+Click the button to clone this repository and deploy it on Vercel:
 
-## Running locally
+[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
 
-### Setup client id
+## Local Development
 
-Before you start, you need to replace the placeholder `clientId` with your client ID to use thirdweb SDK.
+First, run `pnpm i` to install the dependencies.
 
-Refer to [Creating a client](https://portal.thirdweb.com/typescript/v5/client) guide to see how you can get a client id.
+Then, run `pnpm dev` to start the development server and visit localhost:3000.
 
-Go to `src/constants.ts` file and replace the placeholder `clientId` with your client ID.
+## License
 
-```ts
-const clientId = "......";
-```
-
-### Install dependencies
-
-```bash
-yarn install
-```
-
-### Start development server
-
-```bash
-yarn dev
-```
-
-## Resources
-
-- [thirdweb Connect documentation](https://portal.thirdweb.com/connect)
-- [Connect SDK refence](https://portal.thirdweb.com/typescript/v5)
-- [thirdweb Dashboard](https://thirdweb.com/dashboard)
-
-## Join our Discord!
-
-For any questions or suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+This project is licensed under the MIT License.

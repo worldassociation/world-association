@@ -19,7 +19,6 @@ This monorepo has three main folders:
 ```bash
 .
 ├── apps
-│   ├── docs
 │   └── web
 ├── organization
 │   ├── constitution
