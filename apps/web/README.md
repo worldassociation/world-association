@@ -1,23 +1,21 @@
-# Nextra Docs Template 
+# World Association website
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+Source for the World Association website.
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
+## Getting Started
 
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
+Create a copy of the `env.example` into a fresh `.env` file, and fill in the values.
 
-## Quick Start
+```bash
+pnpm install
+```
 
-Click the button to clone this repository and deploy it on Vercel:
+## Running the app
 
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
+In order to start a development server, run:
 
-## Local Development
+```bash
+pnpm dev
+```
 
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the UI.
