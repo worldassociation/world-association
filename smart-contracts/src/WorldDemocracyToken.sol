@@ -11,7 +11,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpg
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract MyToken is
+contract WorldDemocracyToken is
     Initializable,
     ERC20Upgradeable,
     ERC20BurnableUpgradeable,
@@ -36,11 +36,11 @@ contract MyToken is
         address minter,
         address upgrader
     ) public initializer {
-        __ERC20_init("MyToken", "MTK");
+        __ERC20_init("World Democracy Token", "WDT");
         __ERC20Burnable_init();
         __ERC20Pausable_init();
         __AccessControl_init();
-        __ERC20Permit_init("MyToken");
+        __ERC20Permit_init("World Democracy Token");
         __ERC20Votes_init();
         __UUPSUpgradeable_init();
 
@@ -74,6 +74,23 @@ contract MyToken is
     function _authorizeUpgrade(
         address newImplementation
     ) internal override onlyRole(UPGRADER_ROLE) {}
+
+    // Overrides to make it non-transferrable.
+
+    function transfer(
+        address to,
+        uint256 value
+    ) public pure override returns (bool) {
+        revert("Transfers are not allowed");
+    }
+
+    function transferFrom(
+        address from,
+        address to,
+        uint256 value
+    ) public pure override returns (bool) {
+        revert("Transfers are not allowed");
+    }
 
     // The following functions are overrides required by Solidity.
 
