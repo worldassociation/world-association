@@ -4,17 +4,17 @@ The World Association is an innovative political organization that's revolutioni
 
 ## Mission
 
-Our mission is to address the critical and pressing global challenges of human survival, development, and welfare with effective and modern solutions.
+The mission of the Association is to solve critical and pressing global challenges of human survival, development, and welfare.
 
 ## Projects
 
-We are working on initiatives such as
+We are currently working on initiatives such as
 
 - the establishment of a framework for global democracy,
-- building an anonymous yet verifiably democratic online voting system, and
-- introducing a global basic income program, streamed in our digital currency, the world drachma.
+- an anonymous yet verifiably democratic online voting system, and
+- a global basic income program, streamed in our digital currency, the world drachma.
 
-This monorepo has three main folders:
+This repository has three main folders:
 
 ```bash
 .
@@ -36,10 +36,10 @@ The [organization](/organization) folder contains all our governing documents.
 
 The [smart-contracts](/smart-contracts) folder contains all our solidity code.
 
+## Code of Conduct
+
+We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. See our [Code of Conduct](CODE_OF_CONDUCT.md) for more details.
+
 ## License
 
 This project is licensed under the [CC0-1.0 license](LICENSE).
-
-## Code of Conduct
-
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community. See our [code of conduct](CODE_OF_CONDUCT.md) for more details.
