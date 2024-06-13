@@ -75,7 +75,7 @@ contract WorldDemocracyToken is
         address newImplementation
     ) internal override onlyRole(UPGRADER_ROLE) {}
 
-    // Overrides to make it non-transferrable.
+    // Overrides to make it transferrable by minters only.
 
     function transfer(
         address to,
@@ -84,8 +84,6 @@ contract WorldDemocracyToken is
         address owner = _msgSender();
         _transfer(owner, to, value);
         return true;
-    ) public pure override returns (bool) {
-        revert("Transfers are not allowed");
     }
 
     function transferFrom(
@@ -97,8 +95,6 @@ contract WorldDemocracyToken is
         _spendAllowance(from, spender, value);
         _transfer(from, to, value);
         return true;
-    ) public pure override returns (bool) {
-        revert("Transfers are not allowed");
     }
 
     // The following functions are overrides required by Solidity.
