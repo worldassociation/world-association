@@ -11,7 +11,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20VotesUpg
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract WorldDemocracyToken is
+contract GlobalDemocracyToken is
     Initializable,
     ERC20Upgradeable,
     ERC20BurnableUpgradeable,
@@ -36,11 +36,11 @@ contract WorldDemocracyToken is
         address minter,
         address upgrader
     ) public initializer {
-        __ERC20_init("World Democracy Token", "WDT");
+        __ERC20_init("Global Democracy Token", "WDT");
         __ERC20Burnable_init();
         __ERC20Pausable_init();
         __AccessControl_init();
-        __ERC20Permit_init("World Democracy Token");
+        __ERC20Permit_init("Global Democracy Token");
         __ERC20Votes_init();
         __UUPSUpgradeable_init();
 
