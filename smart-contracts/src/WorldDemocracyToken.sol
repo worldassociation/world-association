@@ -84,6 +84,8 @@ contract WorldDemocracyToken is
         address owner = _msgSender();
         _transfer(owner, to, value);
         return true;
+    ) public pure override returns (bool) {
+        revert("Transfers are not allowed");
     }
 
     function transferFrom(
@@ -95,6 +97,8 @@ contract WorldDemocracyToken is
         _spendAllowance(from, spender, value);
         _transfer(from, to, value);
         return true;
+    ) public pure override returns (bool) {
+        revert("Transfers are not allowed");
     }
 
     // The following functions are overrides required by Solidity.
