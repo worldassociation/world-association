@@ -10,7 +10,7 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/ERC20PermitUp
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract WorldDrachma is
+contract Drachma is
     Initializable,
     ERC20Upgradeable,
     ERC20BurnableUpgradeable,
@@ -34,11 +34,11 @@ contract WorldDrachma is
         address minter,
         address upgrader
     ) public initializer {
-        __ERC20_init("World Drachma", "WDD");
+        __ERC20_init("Drachma", "WDD");
         __ERC20Burnable_init();
         __ERC20Pausable_init();
         __AccessControl_init();
-        __ERC20Permit_init("World Drachma");
+        __ERC20Permit_init("Drachma");
         __UUPSUpgradeable_init();
 
         _grantRole(DEFAULT_ADMIN_ROLE, defaultAdmin);

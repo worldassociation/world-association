@@ -26,15 +26,15 @@ This repository has three main folders:
 └── smart-contracts
     └── src
         ├── Constitution.sol
-        ├── WorldDemocracyToken.sol
-        └── WorldDrachma.sol
+        ├── Drachma.sol
+        └── GlobalDemocracyToken.sol
 ```
 
 The [apps](/apps) folder contains all our frontend code.
 
 The [organization](/organization) folder contains all our governing documents.
 
-The [smart-contracts](/smart-contracts) folder contains all our solidity code.
+The [smart-contracts](/smart-contracts) folder contains all our Solidity code.
 
 ## Code of Conduct
 
