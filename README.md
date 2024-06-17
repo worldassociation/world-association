@@ -4,7 +4,7 @@ The World Association is an innovative political organization that's revolutioni
 
 ## Mission
 
-The mission of the Association is to solve humanity's critical and pressing global challenges.
+The mission of the Association is to find democratic solutions to humanity's critical and pressing global challenges.
 
 ## Projects
 

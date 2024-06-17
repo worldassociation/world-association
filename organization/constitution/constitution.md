@@ -19,7 +19,7 @@ The Association’s seat is in the Canton of Zug.
 
 ### 3. Purpose
 
-The Purpose of the Association is to solve humanity's critical and pressing global challenges.
+The Purpose of the Association is to find democratic solutions to humanity's critical and pressing global challenges.
 
 ### 4. Means
 
