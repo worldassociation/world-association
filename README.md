@@ -1,10 +1,10 @@
 # World Association
 
-The World Association is an innovative political organization that's revolutionizing global cooperation. We integrate democratic values with cutting-edge digital technologies to transcend traditional models of international governance.
+The World Association is a democratic organization that is open to everyone. We integrate democratic values with cutting-edge digital technologies to transcend traditional models of international governance.
 
 ## Mission
 
-The mission of the Association is to provide democratic solutions to our pressing global challenges.
+The mission of the Association is to provide democratic solutions to humanity's pressing global challenges.
 
 ## Projects
 
