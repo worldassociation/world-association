@@ -7,8 +7,8 @@ export async function fetchAccessToken(): Promise<string> {
       "Content-type": "application/json",
     },
     body: JSON.stringify({
-      apiKey: "c9dddb71.7d81fc2e56579bbb5303da3391c9e275",
-      appId: "M2024053066119595336406774111128",
+      apiKey: process.env.ZKME_API_KEY,
+      appId: process.env.ZKME_APP_ID,
       apiModePermission: 1,
       lv: 2,
     }),
