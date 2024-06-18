@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: AGPLv3
 pragma solidity 0.8.19;
 
-import {ISuperToken, CustomSuperTokenBase} from "../lib/superfluid-protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/superfluid/CustomSuperTokenBase.sol";
-import {IPureSuperTokenCustom} from "../lib/superfluid-protocol-monorepo/packages/ethereum-contracts/contracts/interfaces/tokens/IPureSuperToken.sol";
-import {UUPSProxy} from "../lib/superfluid-protocol-monorepo/packages/ethereum-contracts/contracts/upgradability/UUPSProxy.sol";
+import {ISuperToken, CustomSuperTokenBase} from "@superfluid/contracts/interfaces/superfluid/CustomSuperTokenBase.sol";
+import {IPureSuperTokenCustom} from "@superfluid/contracts/interfaces/tokens/IPureSuperToken.sol";
+import {UUPSProxy} from "@superfluid/contracts/upgradability/UUPSProxy.sol";
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
