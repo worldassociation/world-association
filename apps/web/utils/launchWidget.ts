@@ -11,7 +11,7 @@ import {
  * @param activeAccount - The active account of the user.
  * @param fetchNewToken - A function that fetches a new access token.
  */
-export async function launchZkMeWidget(
+export function launchZkMeWidget(
   activeAccount: string,
   fetchNewToken: () => Promise<string>
 ) {

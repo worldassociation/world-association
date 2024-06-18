@@ -38,6 +38,10 @@ export default function Hero() {
           {account ? (
             <div className="pop">
               <h3>Prove your personhood</h3>
+              <p>
+                Join us completely anonymously by proving only that you are a
+                real and unique human.
+              </p>
               <PoPButton />
             </div>
           ) : (
