@@ -16,6 +16,3 @@
 [submodule "smart-contracts/lib/custom-supertokens"]
 	path = smart-contracts/lib/custom-supertokens
 	url = https://github.com/superfluid-finance/custom-supertokens
-[submodule "smart-contracts/lib/protocol-monorepo"]
-	path = smart-contracts/lib/protocol-monorepo
-	url = https://github.com/superfluid-finance/protocol-monorepo
