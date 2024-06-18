@@ -48,16 +48,6 @@ export async function launchZkMeWidget(
     }
   );
 
-  const results: boolean = await verifyWithZkMeServices(
-    "M2024053066119595336406774111128",
-    activeAccount,
-    "Anti-Sybil"
-  );
-
-  if (!results) {
-    zkMeWidget.launch();
-  }
-
   async function handleFinished(verifiedAccount: string) {
     if (verifiedAccount === activeAccount) {
       const results = await verifyWithZkMeServices(
@@ -73,4 +63,6 @@ export async function launchZkMeWidget(
   }
 
   zkMeWidget.on("finished", handleFinished);
+
+  zkMeWidget.launch();
 }
