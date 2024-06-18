@@ -13,3 +13,6 @@
 [submodule "smart-contracts/lib/governor"]
 	path = smart-contracts/lib/governor
 	url = https://github.com/voteagora/governor
+[submodule "smart-contracts/lib/custom-supertokens"]
+	path = smart-contracts/lib/custom-supertokens
+	url = https://github.com/superfluid-finance/custom-supertokens
