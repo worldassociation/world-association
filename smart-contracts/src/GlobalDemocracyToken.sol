@@ -36,7 +36,7 @@ contract GlobalDemocracyToken is
         address minter,
         address upgrader
     ) public initializer {
-        __ERC20_init("Global Democracy Token", "WDT");
+        __ERC20_init("Global Democracy Token", "GDT");
         __ERC20Burnable_init();
         __ERC20Pausable_init();
         __AccessControl_init();
