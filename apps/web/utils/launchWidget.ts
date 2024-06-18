@@ -2,6 +2,7 @@ import {
   LoginMode,
   Provider,
   VerificationLevel,
+  verifyWithZkMeServices,
   ZkMeWidget,
 } from "@zkmelabs/widget";
 
@@ -46,6 +47,22 @@ export function launchZkMeWidget(
       mode: loginMode,
     }
   );
+
+  async function handleFinished(verifiedAccount: string) {
+    if (verifiedAccount === activeAccount) {
+      const results = await verifyWithZkMeServices(
+        "M2024053066119595336406774111128",
+        activeAccount,
+        "Anti-Sybil"
+      );
+
+      if (results) {
+        window.alert("MeID verification has been completed");
+      }
+    }
+  }
+
+  zkMeWidget.on("finished", handleFinished);
 
   zkMeWidget.launch();
 }
