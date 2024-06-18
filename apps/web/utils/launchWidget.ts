@@ -11,7 +11,7 @@ import {
  * @param activeAccount - The active account of the user.
  * @param fetchNewToken - A function that fetches a new access token.
  */
-export function launchZkMeWidget(
+export async function launchZkMeWidget(
   activeAccount: string,
   fetchNewToken: () => Promise<string>
 ) {
@@ -48,6 +48,16 @@ export function launchZkMeWidget(
     }
   );
 
+  const results: boolean = await verifyWithZkMeServices(
+    "M2024053066119595336406774111128",
+    activeAccount,
+    "Anti-Sybil"
+  );
+
+  if (!results) {
+    zkMeWidget.launch();
+  }
+
   async function handleFinished(verifiedAccount: string) {
     if (verifiedAccount === activeAccount) {
       const results = await verifyWithZkMeServices(
@@ -63,6 +73,4 @@ export function launchZkMeWidget(
   }
 
   zkMeWidget.on("finished", handleFinished);
-
-  zkMeWidget.launch();
 }
