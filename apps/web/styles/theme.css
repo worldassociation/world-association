@@ -162,6 +162,10 @@ nav a span {
   margin: 6px 0 0 0;
 }
 
+.hero-text P {
+  width: 65%;
+}
+
 .wrapper {
   min-height: calc(100svh - 128px);
   width: 80%;
@@ -179,6 +183,15 @@ nav a span {
   width: 360px;
 }
 
+.pop-content {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+}
+
+.pop-content p {
+  padding: 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .hero h1 {
     font-size: 60px !important;
@@ -187,6 +200,10 @@ nav a span {
   .hero p {
     font-size: 18px !important;
     padding-bottom: 96px;
+  }
+
+  .hero-text P {
+    width: 100%;
   }
 }
 
