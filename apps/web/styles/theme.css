@@ -175,6 +175,10 @@ nav a span {
   display: none;
 }
 
+.pop {
+  width: 360px;
+}
+
 @media screen and (max-width: 1024px) {
   .hero h1 {
     font-size: 60px !important;
