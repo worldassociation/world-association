@@ -12,7 +12,7 @@ const PoPButton: React.FC = () => {
     <button
       onClick={() => launchZkMeWidget(activeAccountAddress, fetchAccessToken)}
     >
-      <p>Start verification</p>
+      <p>Verify with zkMe</p>
     </button>
   );
 };

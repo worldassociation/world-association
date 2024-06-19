@@ -44,6 +44,20 @@ export default function Hero() {
                   real and unique human.
                 </p>
                 <PoPButton />
+                <a
+                  href="https://worldcoin.org/download-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Verify with Worldcoin</button>
+                </a>
+                <a
+                  href="https://www.coinbase.com/onchain-verify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>Verify with Coinbase</button>
+                </a>
               </div>
             </div>
           ) : (
