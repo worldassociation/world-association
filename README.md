@@ -1,14 +1,10 @@
 # World Association
 
-The World Association is a democratic organization that is open to everyone. We integrate democratic values with cutting-edge digital technologies to transcend traditional models of international governance.
-
-## Mission
-
-The mission of the Association is to provide democratic solutions to humanity's pressing global challenges.
+The World Association is a democratic organization that is open to everyone. Join us anonymously to experiment with global democracy and to help us solve humanity's most pressing global challenges.
 
 ## Projects
 
-We are currently working on initiatives such as
+We are currently working on initiatives like
 
 - the establishment of a framework for global democracy,
 - an anonymous yet verifiably democratic online voting system, and
