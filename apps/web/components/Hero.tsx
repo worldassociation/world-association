@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="wrapper">
         <div className="hero-text">
           <h1>World Association</h1>
-          <p>The democratic organization uniting humanity.</p>
+          <p>The organization of global democracy.</p>
           <div className="connect-button">
             {!account && (
               <ConnectButton
