@@ -25,7 +25,7 @@ export default function Hero() {
       nullifier_hash: result.nullifier_hash,
       proof: result.proof,
       verification_level: result.verification_level,
-      action: "verify-with-worldcoin",
+      action: process.env.NEXT_PUBLIC_WLD_ACTION,
       signal: "",
     };
     console.log(
@@ -82,8 +82,8 @@ export default function Hero() {
               <h3>Prove your personhood</h3>
               <div className="pop-content">
                 <IDKitWidget
-                  app_id="app_880aceacfcfbc104c4702143603579ab"
-                  action="verify-with-worldcoin"
+                  app_id={process.env.NEXT_PUBLIC_WLD_APP_ID as `app_${string}`}
+                  action={process.env.NEXT_PUBLIC_WLD_ACTION!}
                   verification_level={VerificationLevel.Device}
                   handleVerify={verifyProof}
                   onSuccess={onSuccess}
