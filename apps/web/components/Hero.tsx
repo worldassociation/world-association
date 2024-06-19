@@ -50,7 +50,7 @@ export default function Hero() {
         <div>
           {account ? (
             <div className="pop">
-              <h3>Verify your uniqueness</h3>
+              <h3>Prove your personhood</h3>
               <div className="pop-content">
                 <IDKitWidget
                   app_id="app_880aceacfcfbc104c4702143603579ab"

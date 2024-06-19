@@ -237,14 +237,6 @@ nav a span {
   .hero h1 {
     font-size: 60px !important;
   }
-
-  .hero p {
-    padding-bottom: 96px;
-  }
-
-  .hero-text P {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -255,7 +247,11 @@ nav a span {
   }
 
   .hero-text {
-    padding-top: 32px;
+    padding-top: 48px;
+  }
+
+  .hero-text p {
+    margin-bottom: 48px;
   }
 
   .hero h1 {
@@ -270,8 +266,10 @@ nav a span {
     display: none;
   }
 
-  .hero p {
-    padding-bottom: 24px;
+  .pop-content {
+    border: none;
+    padding-top: 16px;
+    padding-bottom: 0;
   }
 }
 
