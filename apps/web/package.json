@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "@worldcoin/idkit": "^1.2.0",
     "@zkmelabs/widget": "^0.2.3",
     "next": "^14.1.1",
     "nextra": "latest",

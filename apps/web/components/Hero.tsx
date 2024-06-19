@@ -6,13 +6,26 @@ import {
 } from "thirdweb/react";
 import { chain, client } from "../utils/constants";
 import "@zkmelabs/widget/dist/style.css";
+import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit";
 import PoPButton from "../components/PoPButton";
 
 export default function Hero() {
   const account = useActiveAccount();
+
   const customTheme = lightTheme({
     colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
   });
+
+  // TODO: Calls your implemented server route
+  const verifyProof = async (proof) => {
+    throw new Error("TODO: verify proof server route");
+  };
+
+  // TODO: Functionality after verifying
+  const onSuccess = () => {
+    console.log("Success");
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -39,22 +52,26 @@ export default function Hero() {
             <div className="pop">
               <h3>Verify your uniqueness</h3>
               <div className="pop-content">
-                <PoPButton />
-                <a
-                  href="https://worldcoin.org/download-app"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <IDKitWidget
+                  app_id="app_880aceacfcfbc104c4702143603579ab"
+                  action="verify-with-worldcoin"
+                  verification_level={VerificationLevel.Device}
+                  handleVerify={verifyProof}
+                  onSuccess={onSuccess}
                 >
-                  <button>
-                    <img
-                      src="/img/icons/worldcoin.png"
-                      alt="Icon Description"
-                      width="24"
-                      height="24"
-                    />
-                    <p>Verify with Worldcoin</p>
-                  </button>
-                </a>
+                  {({ open }) => (
+                    <button onClick={open}>
+                      <img
+                        src="/img/icons/worldcoin.png"
+                        alt="Icon Description"
+                        width="24"
+                        height="24"
+                      />
+                      <p>Verify with Worldcoin</p>
+                    </button>
+                  )}
+                </IDKitWidget>
+                <PoPButton />
                 <a
                   href="https://www.coinbase.com/onchain-verify"
                   target="_blank"
