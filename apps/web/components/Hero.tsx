@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="wrapper">
         <div className="hero-text">
           <h1>World Association</h1>
-          <p>The democratic United Nations alternative.</p>
+          <p>The democratic organization uniting humanity.</p>
           <div className="connect-button">
             {!account && (
               <ConnectButton
@@ -37,26 +37,38 @@ export default function Hero() {
         <div>
           {account ? (
             <div className="pop">
-              <h3>Prove your personhood</h3>
+              <h3>Verify your uniqueness</h3>
               <div className="pop-content">
-                <p>
-                  Join us completely anonymously by only proving that you are a
-                  real and unique human.
-                </p>
                 <PoPButton />
                 <a
                   href="https://worldcoin.org/download-app"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>Verify with Worldcoin</button>
+                  <button>
+                    <img
+                      src="/img/icons/worldcoin.png"
+                      alt="Icon Description"
+                      width="24"
+                      height="24"
+                    />
+                    <p>Verify with Worldcoin</p>
+                  </button>
                 </a>
                 <a
                   href="https://www.coinbase.com/onchain-verify"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>Verify with Coinbase</button>
+                  <button>
+                    <img
+                      src="/img/icons/coinbase.png"
+                      alt="Icon Description"
+                      width="24"
+                      height="24"
+                    />
+                    <p>Verify with Coinbase</p>
+                  </button>
                 </a>
               </div>
             </div>

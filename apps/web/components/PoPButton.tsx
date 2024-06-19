@@ -12,6 +12,12 @@ const PoPButton: React.FC = () => {
     <button
       onClick={() => launchZkMeWidget(activeAccountAddress, fetchAccessToken)}
     >
+      <img
+        src="/img/icons/zkMe.png"
+        alt="Icon Description"
+        width="24"
+        height="24"
+      />
       <p>Verify with zkMe</p>
     </button>
   );

@@ -169,17 +169,12 @@ nav a span {
 
 .hero p {
   font-size: 18px;
-  font-weight: 400 !important;
   color: var(--wa-neutral-700);
   margin: 6px 0 0 0;
 }
 
 :is(html[class~="dark"]) .hero p {
   color: var(--wa-neutral-300);
-}
-
-.hero-text P {
-  width: 65%;
 }
 
 .wrapper {
@@ -205,22 +200,37 @@ nav a span {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
+  padding: 24px;
 }
 
 :is(html[class~="dark"]) .pop-content {
   background-color: #fff;
 }
 
-.pop-content p {
-  padding: 24px;
+.pop-content p,
+.pop-content a {
+  color: #211f26;
   font-size: 16px;
+  font-weight: 500;
+  margin: 0;
 }
 
-:is(html[class~="dark"]) .pop-content p,
-.pop-content a {
-  color: var(--wa-neutral-700);
+.pop-content button {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  width: 312px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  align-items: center;
+  transition: border 200ms ease 0s;
+}
+
+.pop-content button:hover {
+  border-color: #3b82f6;
 }
 
 @media screen and (max-width: 1024px) {
@@ -229,7 +239,6 @@ nav a span {
   }
 
   .hero p {
-    font-size: 18px !important;
     padding-bottom: 96px;
   }
 
