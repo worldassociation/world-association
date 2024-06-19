@@ -202,22 +202,16 @@ nav a span {
 .pop-content {
   border: 1px solid #e5e7eb;
   border-radius: 20px;
-<<<<<<< HEAD
   background-color: var(--wa-neutral-100);
-=======
->>>>>>> d9396671a58eb3a7a3b27c415fc63e22091a6972
 }
 
 .pop-content p {
   padding: 24px;
-<<<<<<< HEAD
 }
 
 :is(html[class~="dark"]) .pop-content p,
 .pop-content a {
   color: var(--wa-neutral-700);
-=======
->>>>>>> d9396671a58eb3a7a3b27c415fc63e22091a6972
 }
 
 @media screen and (max-width: 1024px) {
