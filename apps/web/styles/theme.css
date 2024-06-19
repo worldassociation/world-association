@@ -133,33 +133,49 @@
 /* Main nav */
 nav a span {
   font-weight: 500 !important;
-  color: #211f26 !important;
+  color: var(--wa-neutral-800);
   padding: 0 16px;
+}
+
+:is(html[class~="dark"]) nav a span {
+  color: var(--wa-neutral-200);
 }
 
 /* Hero */
 .hero h1 {
-  font-size: 68px !important;
+  font-size: 68px;
   font-weight: 700;
-  color: #090909;
+  color: var(--wa-neutral-800);
   margin: 0 !important;
   line-height: normal;
+}
+
+:is(html[class~="dark"]) .hero h1 {
+  color: var(--wa-neutral-200);
 }
 
 .hero h3 {
   font-size: 20px !important;
   font-weight: 700 !important;
-  color: #211f26 !important;
+  color: var(--wa-neutral-700);
   margin: 0 !important;
   text-align: center;
   padding: 0 0 6px 0;
 }
 
+:is(html[class~="dark"]) .hero h3 {
+  color: var(--wa-neutral-300);
+}
+
 .hero p {
-  font-size: 18px;
+  font-size: 18px !important;
   font-weight: 400 !important;
-  color: #211f26 !important;
+  color: var(--wa-neutral-700);
   margin: 6px 0 0 0;
+}
+
+:is(html[class~="dark"]) .hero p {
+  color: var(--wa-neutral-300);
 }
 
 .hero-text P {
@@ -186,19 +202,10 @@ nav a span {
 .pop-content {
   border: 1px solid #e5e7eb;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  text-align: center;
 }
 
-.pop-content p,
-.pop-content a {
-  padding: 16px;
-  font-size: 16px;
-  margin: 16px 24px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
+.pop-content p {
+  padding: 24px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -207,17 +214,12 @@ nav a span {
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 18px !important;
     padding-bottom: 96px;
   }
 
   .hero-text P {
     width: 100%;
-  }
-
-  .pop-content p {
-    padding: 24px;
-    font-size: 16px;
   }
 }
 
