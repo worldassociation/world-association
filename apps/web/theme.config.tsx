@@ -20,6 +20,14 @@ const config: DocsThemeConfig = {
   project: {
     link: "https://github.com/worldassociation/world-association",
   },
+  banner: {
+    text: (
+      <span>
+        The World Association is under heavy development and is only available
+        for demonstration and testing.
+      </span>
+    ),
+  },
   navbar: {
     extraContent: <HeaderConnectButton />,
   },

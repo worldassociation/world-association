@@ -172,6 +172,7 @@ nav a span {
   font-weight: 400;
   color: var(--wa-neutral-700);
   margin: 6px 0 0 0;
+  width: 75%;
 }
 
 :is(html[class~="dark"]) .hero p {
@@ -237,6 +238,10 @@ nav a span {
 @media screen and (max-width: 1024px) {
   .hero h1 {
     font-size: 60px !important;
+  }
+
+  .hero p {
+    width: 100%;
   }
 }
 

@@ -60,7 +60,10 @@ export default function Hero() {
       <div className="wrapper">
         <div className="hero-text">
           <h1>World Association</h1>
-          <p>The organization of global democracy.</p>
+          <p>
+            The organization uniting humanity. Join us anonymously, claim your
+            basic income, and experiment with global democracy.
+          </p>
           <div className="connect-button">
             {!account && (
               <ConnectButton
@@ -81,6 +84,7 @@ export default function Hero() {
             <div className="pop">
               <h3>Prove your personhood</h3>
               <div className="pop-content">
+                <PoPButton />
                 <IDKitWidget
                   app_id={process.env.NEXT_PUBLIC_WLD_APP_ID as `app_${string}`}
                   action={process.env.NEXT_PUBLIC_WLD_ACTION!}
@@ -100,7 +104,6 @@ export default function Hero() {
                     </button>
                   )}
                 </IDKitWidget>
-                <PoPButton />
                 <a
                   href="https://www.coinbase.com/onchain-verify"
                   target="_blank"
