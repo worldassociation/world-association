@@ -158,7 +158,7 @@ nav a span {
   color: var(--wa-neutral-700);
   margin: 0 !important;
   text-align: center;
-  padding: 0 0 6px 0;
+  padding: 0 0 8px 0;
 }
 
 :is(html[class~="dark"]) .hero h3 {
@@ -169,8 +169,8 @@ nav a span {
   font-size: 17px;
   font-weight: 400;
   color: var(--wa-neutral-700);
-  margin: 6px 0 0 0;
-  width: 80%;
+  margin: 8px 0 0 0;
+  width: 70%;
 }
 
 :is(html[class~="dark"]) .hero p {
@@ -274,7 +274,7 @@ nav a span {
 
   .pop-content {
     border: none;
-    padding-top: 16px;
+    padding-top: 8px;
     padding-bottom: 0;
   }
 }
