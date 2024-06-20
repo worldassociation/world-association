@@ -21,7 +21,7 @@ const config: DocsThemeConfig = {
     link: "https://github.com/worldassociation/world-association",
   },
   banner: {
-    text: <span>Public preview - for demo and testing only!</span>,
+    text: <span>Public preview – for demo and testing only!</span>,
   },
   navbar: {
     extraContent: <HeaderConnectButton />,
