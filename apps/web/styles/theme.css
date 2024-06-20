@@ -167,6 +167,7 @@ nav a span {
 
 .hero p {
   font-size: 17px;
+  font-weight: 400;
   color: var(--wa-neutral-700);
   margin: 6px 0 0 0;
   width: 80%;
@@ -252,11 +253,11 @@ nav a span {
   }
 
   .hero-text {
-    padding-top: 48px;
+    padding-top: 64px;
   }
 
   .hero-text p {
-    margin-bottom: 48px;
+    margin-bottom: 64px;
   }
 
   .hero h1 {
