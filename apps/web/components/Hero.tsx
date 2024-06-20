@@ -61,8 +61,9 @@ export default function Hero() {
         <div className="hero-text">
           <h1>World Association</h1>
           <p>
-            A democratic organization open to all. Join us anonymously, claim
-            your basic income, and experiment with global democracy.
+            The democratic United Nations alternative. Join us anonymously,
+            claim your basic income, and help us solve humanity's most pressing
+            global challenges.
           </p>
           <div className="connect-button">
             {!account && (
@@ -82,7 +83,7 @@ export default function Hero() {
         <div>
           {account ? (
             <div className="pop">
-              <h3>Prove your uniqueness and join</h3>
+              <h3>Join us anonymously</h3>
               <div className="pop-content">
                 <PoPButton />
                 <IDKitWidget
@@ -100,7 +101,7 @@ export default function Hero() {
                         width="24"
                         height="24"
                       />
-                      <p>Prove with World ID</p>
+                      <p>Join with World ID</p>
                     </button>
                   )}
                 </IDKitWidget>
