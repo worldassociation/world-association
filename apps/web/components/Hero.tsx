@@ -61,8 +61,8 @@ export default function Hero() {
         <div className="hero-text">
           <h1>World Association</h1>
           <p>
-            The democratic organization uniting humanity. Join us anonymously,
-            claim your basic income, and experiment with global democracy.
+            A democratic organization open to all. Join us anonymously, claim
+            your basic income, and experiment with global democracy.
           </p>
           <div className="connect-button">
             {!account && (
