@@ -18,7 +18,7 @@ const PoPButton: React.FC = () => {
         width="24"
         height="24"
       />
-      <p>Verify with zkMe</p>
+      <p>Prove with MeID</p>
     </button>
   );
 };
