@@ -61,8 +61,8 @@ export default function Hero() {
         <div className="hero-text">
           <h1>World Association</h1>
           <p>
-            The organization uniting humanity. Join us anonymously, claim your
-            basic income, and experiment with global democracy.
+            The democratic organization uniting humanity. Join us anonymously,
+            claim your basic income, and experiment with global democracy.
           </p>
           <div className="connect-button">
             {!account && (
@@ -82,7 +82,7 @@ export default function Hero() {
         <div>
           {account ? (
             <div className="pop">
-              <h3>Prove your personhood</h3>
+              <h3>Prove your uniqueness</h3>
               <div className="pop-content">
                 <PoPButton />
                 <IDKitWidget
@@ -104,21 +104,6 @@ export default function Hero() {
                     </button>
                   )}
                 </IDKitWidget>
-                <a
-                  href="https://www.coinbase.com/onchain-verify"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button>
-                    <img
-                      src="/img/icons/coinbase.png"
-                      alt="Icon Description"
-                      width="24"
-                      height="24"
-                    />
-                    <p>Verify with Coinbase</p>
-                  </button>
-                </a>
               </div>
             </div>
           ) : (
