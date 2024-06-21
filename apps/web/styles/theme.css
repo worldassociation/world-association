@@ -178,7 +178,7 @@ nav a span {
 }
 
 .wrapper {
-  min-height: calc(100svh - 168px);
+  min-height: calc(100svh - 128px);
   width: 80%;
   display: flex;
   justify-content: space-between;
