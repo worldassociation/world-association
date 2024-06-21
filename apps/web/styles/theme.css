@@ -245,7 +245,8 @@ nav a span {
 }
 
 .css-2mxilq {
-  min-width: 164px !important;
+  min-width: 140px !important;
+  padding: 8px 14px 8px 12px !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -290,6 +291,13 @@ nav a span {
     border: none;
     padding-top: 8px;
     padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .css-2mxilq {
+    gap: 12px;
+    padding: 8px 14px 8px 12px !important;
   }
 }
 
