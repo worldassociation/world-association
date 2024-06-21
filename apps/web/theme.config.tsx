@@ -5,6 +5,47 @@ import { useConfig } from "nextra-theme-docs";
 import HeaderConnectButton from "./components/HeaderConnectButton";
 
 const config: DocsThemeConfig = {
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath === "/") {
+      return {
+        titleTemplate: "World Association",
+      };
+    } else {
+      return {
+        titleTemplate: "%s | World Association",
+      };
+    }
+  },
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter();
+    const { frontMatter } = useConfig();
+    const url =
+      "https://worldassociation.org" +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
+
+    return (
+      <>
+        <meta property="og:url" content={url} />
+        <meta
+          property="og:title"
+          content={frontMatter.title || "World Association"}
+        />
+        <meta
+          property="og:description"
+          content={
+            frontMatter.description ||
+            "The democratic United Nations alternative."
+          }
+        />
+        <link
+          rel="icon"
+          href="/img/icons/favicon.ico"
+          type="image/x-icon"
+        ></link>
+      </>
+    );
+  },
   logo: (
     <svg viewBox="0 0 600 600" width="38" height="38">
       <style>
@@ -47,47 +88,7 @@ const config: DocsThemeConfig = {
     text: "Edit this page on GitHub",
   },
   gitTimestamp: null,
-  useNextSeoProps() {
-    const { asPath } = useRouter();
-    if (asPath === "/") {
-      return {
-        titleTemplate: "World Association",
-      };
-    } else {
-      return {
-        titleTemplate: "%s | World Association",
-      };
-    }
-  },
-  head: () => {
-    const { asPath, defaultLocale, locale } = useRouter();
-    const { frontMatter } = useConfig();
-    const url =
-      "https://worldassociation.org" +
-      (defaultLocale === locale ? asPath : `/${locale}${asPath}`);
-
-    return (
-      <>
-        <meta property="og:url" content={url} />
-        <meta
-          property="og:title"
-          content={frontMatter.title || "World Association"}
-        />
-        <meta
-          property="og:description"
-          content={
-            frontMatter.description ||
-            "The democratic United Nations alternative."
-          }
-        />
-        <link
-          rel="icon"
-          href="/img/icons/favicon.ico"
-          type="image/x-icon"
-        ></link>
-      </>
-    );
-  },
+  darkMode: false,
 };
 
 export default config;
