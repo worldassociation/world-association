@@ -166,11 +166,10 @@ nav a span {
 }
 
 .hero p {
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 400;
   color: var(--wa-neutral-700);
   margin: 8px 0 0 0;
-  width: 72%;
 }
 
 :is(html[class~="dark"]) .hero p {
@@ -252,10 +251,6 @@ nav a span {
   .hero h1 {
     font-size: 60px;
   }
-
-  .hero p {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
@@ -267,11 +262,11 @@ nav a span {
   }
 
   .hero-text {
-    padding-top: 64px;
+    padding-top: 32px;
   }
 
   .hero-text p {
-    margin-bottom: 64px;
+    font-size: 18px;
   }
 
   .hero h1 {
@@ -279,6 +274,7 @@ nav a span {
   }
 
   .connect-button {
+    margin-top: 32px;
     display: block;
   }
 

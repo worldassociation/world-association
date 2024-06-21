@@ -60,11 +60,7 @@ export default function Hero() {
       <div className="wrapper">
         <div className="hero-text">
           <h1>World Association</h1>
-          <p>
-            The democratic United Nations alternative. Join anonymously, claim
-            your basic income, and help us solve humanity's most pressing global
-            challenges.
-          </p>
+          <p>The democratic United Nations alternative.</p>
           <div className="connect-button">
             {!account && (
               <ConnectButton
