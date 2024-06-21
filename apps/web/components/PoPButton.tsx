@@ -10,6 +10,7 @@ const PoPButton: React.FC = () => {
 
   return (
     <button
+      id="zkMeButton"
       onClick={() => launchZkMeWidget(activeAccountAddress, fetchAccessToken)}
     >
       <img
@@ -18,7 +19,7 @@ const PoPButton: React.FC = () => {
         width="24"
         height="24"
       />
-      <p>Get your MeID</p>
+      <p>Join with zkMe</p>
     </button>
   );
 };

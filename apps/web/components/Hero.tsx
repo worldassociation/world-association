@@ -69,7 +69,13 @@ export default function Hero() {
                 theme={"light"}
                 connectButton={{
                   label: "Sign in",
-                  style: { backgroundColor: "#090909", color: "#ffffff" },
+                  style: {
+                    backgroundColor: "#090909",
+                    color: "#fff",
+                    padding: "16px",
+                    alignItems: "center",
+                    width: "312px",
+                  },
                 }}
                 connectModal={{ showThirdwebBranding: false }}
               />
@@ -97,10 +103,25 @@ export default function Hero() {
                         width="24"
                         height="24"
                       />
-                      <p>Join with World ID</p>
+                      <p>Join with Worldcoin</p>
                     </button>
                   )}
                 </IDKitWidget>
+                <a
+                  href="https://www.coinbase.com/onchain-verify"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>
+                    <img
+                      src="/img/icons/coinbase.png"
+                      alt="Icon Description"
+                      width="24"
+                      height="24"
+                    />
+                    <p>Join with Coinbase</p>
+                  </button>
+                </a>
               </div>
             </div>
           ) : (
