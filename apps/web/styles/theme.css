@@ -170,7 +170,7 @@ nav a span {
   font-weight: 400;
   color: var(--wa-neutral-700);
   margin: 8px 0 0 0;
-  width: 70%;
+  width: 72%;
 }
 
 :is(html[class~="dark"]) .hero p {
