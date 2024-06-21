@@ -234,6 +234,11 @@ nav a span {
   border-color: #3b82f6;
 }
 
+#idkit-widget {
+  z-index: 100000;
+  position: fixed;
+}
+
 @media screen and (max-width: 1024px) {
   .hero h1 {
     font-size: 60px;
