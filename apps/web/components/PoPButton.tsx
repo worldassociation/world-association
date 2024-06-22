@@ -2,8 +2,8 @@
 
 import React from "react";
 import { useActiveAccount } from "thirdweb/react";
-import { fetchAccessToken } from "../utils/fetchAccessToken";
-import { launchZkMeWidget } from "../utils/launchWidget";
+import { fetchAccessToken } from "../lib/fetchAccessToken";
+import { launchZkMeWidget } from "../lib/launchWidget";
 
 const PoPButton: React.FC = () => {
   const activeAccountAddress = useActiveAccount()?.address as string;

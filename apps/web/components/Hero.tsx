@@ -4,7 +4,7 @@ import {
   lightTheme,
   useActiveAccount,
 } from "thirdweb/react";
-import { chain, client } from "../utils/constants";
+import { chain, client } from "../lib/constants";
 import "@zkmelabs/widget/dist/style.css";
 import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit";
 import type { ISuccessResult } from "@worldcoin/idkit";

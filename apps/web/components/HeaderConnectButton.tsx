@@ -1,6 +1,6 @@
 import React from "react";
 import { ConnectButton, useActiveAccount } from "thirdweb/react";
-import { chain, client } from "../utils/constants";
+import { chain, client } from "../lib/constants";
 
 const HeaderConnectButton = () => {
   const activeAccountAddress = useActiveAccount()?.address;
