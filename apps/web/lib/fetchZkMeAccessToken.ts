@@ -1,5 +1,3 @@
-// This function fetches a new access token from the specified API endpoint.
-
 export async function fetchAccessToken(): Promise<string> {
   return fetch("https://nest-api.zk.me/api/token/get", {
     method: "POST",

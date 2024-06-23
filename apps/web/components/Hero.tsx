@@ -7,50 +7,19 @@ import {
 import { chain, client } from "../lib/constants";
 import "@zkmelabs/widget/dist/style.css";
 import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit";
-import { verifyProof } from "../lib/verifyProof";
-import PoPButton from "../components/PoPButton";
-import { useToast } from "./ui/use-toast";
+import { verifyProof } from "../lib/verifyWorldIDProof";
+import { fetchAccessToken } from "../lib/fetchZkMeAccessToken";
+import { launchZkMeWidget } from "../lib/launchZkMeWidget";
 
 export default function Hero() {
   const account = useActiveAccount();
   const customTheme = lightTheme({
     colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
   });
-  const { toast } = useToast();
 
   // TODO: Functionality after verifying
   const onSuccess = () => {
     console.log("Success");
-  };
-
-  const handleMint = async () => {
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        toAddress: account?.address,
-      }),
-    };
-
-    await fetch("/api/mintToken", options)
-      .then((response) => {
-        if (response.status === 200) {
-          toast({
-            description: "Token minted successfully.",
-          });
-          console.log("Token minted successfully.");
-        }
-      })
-      .catch((err) => {
-        toast({
-          variant: "destructive",
-          description: "Uh oh! Something went wrong.",
-        });
-        console.error(err);
-        console.log("error minting token: " + err);
-      });
   };
 
   return (
@@ -85,7 +54,19 @@ export default function Hero() {
             <div className="pop">
               <h3>Join us anonymously</h3>
               <div className="pop-content">
-                <PoPButton />
+                <button
+                  onClick={() =>
+                    launchZkMeWidget(account.address, fetchAccessToken)
+                  }
+                >
+                  <img
+                    src="/img/icons/zkMe.png"
+                    alt="Icon Description"
+                    width="24"
+                    height="24"
+                  />
+                  <p>Join with zkMe</p>
+                </button>
                 <IDKitWidget
                   app_id={process.env.NEXT_PUBLIC_WLD_APP_ID as `app_${string}`}
                   action={process.env.NEXT_PUBLIC_WLD_ACTION!}
