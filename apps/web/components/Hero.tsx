@@ -10,20 +10,14 @@ import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit";
 import type { ISuccessResult } from "@worldcoin/idkit";
 import type { VerifyReply } from "../pages/api/verifyWorldID";
 import PoPButton from "../components/PoPButton";
-import { useState } from "react";
 import { useToast } from "./ui/use-toast";
-import { Button } from "../components/ui/button";
 
 export default function Hero() {
   const account = useActiveAccount();
-
   const customTheme = lightTheme({
     colors: { borderColor: "#e5e7eb", modalBg: "#ffffff" },
   });
-
   const { toast } = useToast();
-
-  const [isMinting, setIsMinting] = useState<boolean>(false);
 
   const verifyProof = async (result: ISuccessResult) => {
     console.log("Proof received from IDKit:\n", JSON.stringify(result)); // Log the proof from IDKit to the console for visibility
@@ -63,8 +57,6 @@ export default function Hero() {
   };
 
   const handleMint = async () => {
-    setIsMinting(true);
-
     const options = {
       method: "POST",
       headers: {
@@ -75,16 +67,13 @@ export default function Hero() {
       }),
     };
 
-    // fetch api/mint endpoint
     await fetch("/api/mintToken", options)
       .then((response) => {
-        // if status is 200 display toast success
         if (response.status === 200) {
           toast({
             description: "Token minted successfully.",
           });
           console.log("Token minted successfully.");
-          setIsMinting(false);
         }
       })
       .catch((err) => {
@@ -94,7 +83,6 @@ export default function Hero() {
         });
         console.error(err);
         console.log("error minting token: " + err);
-        setIsMinting(false);
       });
   };
 
@@ -165,16 +153,6 @@ export default function Hero() {
                     <p>Join with Coinbase</p>
                   </button>
                 </a>
-                <button onClick={handleMint} disabled={isMinting}>
-                  {isMinting ? "Minting..." : "Mint Global Democracy Token"}
-                </button>
-                <Button
-                  onClick={handleMint}
-                  disabled={isMinting}
-                  className="h-14"
-                >
-                  {isMinting ? "Minting..." : "Mint Global Democracy Token"}
-                </Button>
               </div>
             </div>
           ) : (
