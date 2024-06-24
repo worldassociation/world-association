@@ -2,64 +2,122 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 5.9% 10%;
-    --radius: 1rem;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
-  }
+* {
+  background-color: var(--blackground);
+  color: var(--primary);
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+@font-face {
+  font-family: "HarmonyOS Sans Thin";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Thin"),
+    url("../public/fonts/HarmonyOS_Sans_Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Thin Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Thin Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Thin_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Light";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Light"),
+    url("../public/fonts/HarmonyOS_Sans_Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Light Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Light_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Regular";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Regular"),
+    url("../public/fonts/HarmonyOS_Sans_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Regular_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Medium";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Medium"),
+    url("../public/fonts/HarmonyOS_Sans_Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Medium Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Medium_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Bold";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Bold"),
+    url("../public/fonts/HarmonyOS_Sans_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Bold Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Bold_Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Black";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Black"),
+    url("../public/fonts/HarmonyOS_Sans_Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HarmonyOS Sans Black Italic";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("HarmonyOS Sans Black Italic"),
+    url("../public/fonts/HarmonyOS_Sans_Regular.woff") format("woff");
 }
 
 :root {
   font-family:
+    "HarmonyOS Sans Regular",
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -71,169 +129,37 @@
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-weight: 420;
+  font-weight: 400;
 
   .nx-rounded-xl {
     border-radius: 5px;
-  }
-
-  .nx-text-gray-100 {
-    color: var(--wa-neutral-100);
-  }
-
-  .nx-text-gray-200 {
-    color: var(--wa-neutral-200);
-  }
-
-  .nx-text-gray-300 {
-    color: var(--wa-neutral-300);
-  }
-
-  .nx-text-gray-400 {
-    color: var(--wa-neutral-400);
-  }
-
-  .nx-text-gray-500 {
-    color: var(--wa-neutral-500);
-  }
-
-  .nx-text-gray-600 {
-    color: var(--wa-neutral-600);
-  }
-
-  .nx-text-gray-700 {
-    color: var(--wa-neutral-700);
-  }
-
-  .nx-text-gray-800 {
-    color: var(--wa-neutral-800);
-  }
-
-  .nx-text-gray-900 {
-    color: var(--wa-neutral-900);
-  }
-
-  .nx-text-slate-900 {
-    color: var(--wa-neutral-900);
-  }
-
-  .nx-bg-gray-100 {
-    color: var(--wa-neutral-100);
-  }
-
-  .nx-bg-gray-200 {
-    color: var(--wa-neutral-200);
-  }
-
-  .nx-bg-gray-300 {
-    color: var(--wa-neutral-300);
-  }
-
-  .nx-bg-gray-400 {
-    color: var(--wa-neutral-400);
-  }
-
-  .nx-bg-gray-500 {
-    color: var(--wa-neutral-500);
-  }
-
-  .nx-bg-gray-600 {
-    color: var(--wa-neutral-600);
-  }
-
-  .nx-bg-gray-800 {
-    color: var(--wa-neutral-800);
-  }
-
-  .nx-bg-gray-900 {
-    color: var(--wa-neutral-900);
-  }
-
-  .nx-bg-primary-100 {
-    background-color: var(--wa-blue-100);
-  }
-
-  .nx-bg-primary-200 {
-    background-color: var(--wa-blue-200);
-  }
-
-  .nx-bg-primary-300 {
-    background-color: var(--wa-blue-300);
-  }
-
-  .nx-bg-primary-400 {
-    background-color: var(--wa-blue-400);
-  }
-
-  .nx-bg-primary-500 {
-    background-color: var(--wa-blue-500);
-  }
-
-  .nx-bg-primary-600 {
-    background-color: var(--wa-blue-600);
-  }
-
-  .nx-bg-primary-800 {
-    background-color: var(--wa-blue-700);
-  }
-
-  .nx-bg-primary-800 {
-    background-color: var(--wa-blue-800);
-  }
-
-  .nx-bg-primary-900 {
-    background-color: var(--wa-blue-900);
-  }
-
-  .nx-bg-primary-700\/5 {
-    background-color: var(--wa-neutral-100);
   }
 }
 
 /* Main nav */
 nav a span {
-  font-weight: 500;
-  color: var(--wa-neutral-800);
+  font-family: "HarmonyOS Sans Medium";
   padding: 0 16px;
-}
-
-:is(html[class~="dark"]) nav a span {
-  color: var(--wa-neutral-200);
 }
 
 /* Hero */
 .hero h1 {
   font-size: 68px;
-  font-weight: 700;
-  color: var(--wa-neutral-800);
+  font-family: "HarmonyOS Sans Bold";
   margin: 0 !important;
   line-height: normal;
 }
 
-:is(html[class~="dark"]) .hero h1 {
-  color: var(--wa-neutral-200);
-}
-
 .hero h3 {
-  color: var(--wa-neutral-700);
   margin: 0 !important;
   text-align: center;
   padding: 0 0 8px 0;
 }
 
-:is(html[class~="dark"]) .hero h3 {
-  color: var(--wa-neutral-300);
-}
-
-.hero p {
+.hero-text p {
   font-size: 19px;
-  font-weight: 400;
-  color: var(--wa-neutral-700);
+  font-family: "HarmonyOS Sans Light";
   margin: 8px 0 0 0;
-}
-
-:is(html[class~="dark"]) .hero p {
-  color: var(--wa-neutral-300);
 }
 
 .wrapper {
@@ -255,7 +181,7 @@ nav a span {
 }
 
 .pop-content {
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
   border-radius: 20px;
   background-color: transparent;
   display: flex;
@@ -265,20 +191,15 @@ nav a span {
   padding: 24px;
 }
 
-:is(html[class~="dark"]) .pop-content {
-  background-color: #fff;
-}
-
 .pop-content p {
-  color: #211f26;
   font-size: 16px;
-  font-weight: 500;
+  font-family: "HarmonyOS Sans Regular";
   margin: 0;
 }
 
 .pop-content button {
   padding: 16px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--border);
   border-radius: 12px;
   width: 312px;
   display: flex;
@@ -322,7 +243,7 @@ nav a span {
   }
 
   .hero-text {
-    padding-top: 32px;
+    padding-top: 64px;
   }
 
   .hero-text p {
@@ -358,17 +279,17 @@ a.nx-underline {
 
 h2 {
   border: none;
-  font-weight: 700 !important;
+  font-family: "HarmonyOS Sans Bold";
 }
 
 h3 {
   font-size: 1.25rem !important;
-  font-weight: 700 !important;
+  font-family: "HarmonyOS Sans Bold";
 }
 
 h4 {
   font-size: 1rem !important;
-  font-weight: 700;
+  font-family: "HarmonyOS Sans Bold";
 }
 
 /* Override Nextra for headings in-content */
@@ -382,30 +303,6 @@ h4 {
 
 .nextra-content h3 ~ p {
   margin-top: 0.3rem;
-}
-
-/* Set colors for common text elements */
-p,
-table,
-ol,
-ul {
-  color: var(--wa-neutral-800);
-}
-
-:is(html[class~="dark"]) p {
-  color: var(--wa-neutral-200);
-}
-
-:is(html[class~="dark"]) table {
-  color: var(--wa-neutral-200);
-}
-
-:is(html[class~="dark"]) ol {
-  color: var(--wa-neutral-200);
-}
-
-:is(html[class~="dark"]) ul {
-  color: var(--wa-neutral-200);
 }
 
 /* Restyle Nextra Steps */
@@ -433,26 +330,18 @@ pre {
     Liberation Mono,
     Courier New,
     monospace !important;
-  font-weight: 420 !important;
 }
 
 code {
-  background-color: var(--wa-neutral-100) !important;
   border-radius: 5px !important;
 }
 
-:is(html[class~="dark"]) code {
-  background-color: var(--wa-neutral-700) !important;
-}
-
 pre {
-  border: 1px solid var(--wa-neutral-200);
-  background-color: var(--wa-neutral-100);
+  border: 1px solid var(--border);
 }
 
 :is(html[class~="dark"]) pre {
-  border: 1px solid var(--wa-neutral-600);
-  background-color: var(--wa-neutral-800);
+  border: 1px solid var(--border);
 }
 
 /* Tables */
@@ -465,7 +354,7 @@ table tr {
   display: block;
   width: 100%;
   margin-top: 0.1em;
-  border-top: 1px solid var(--wa-neutral-200);
+  border-top: 1px solid var(--border);
 }
 
 .nextra-toc .top-divider {
@@ -473,5 +362,5 @@ table tr {
 }
 
 :is(html[class~="dark"]) .nextra-toc .divider {
-  border-top: 1px solid var(--wa-neutral-700);
+  border-top: 1px solid var(--border);
 }

@@ -88,7 +88,7 @@ const config: DocsThemeConfig = {
     text: "Edit this page on GitHub",
   },
   gitTimestamp: null,
-  darkMode: false,
+  darkMode: true,
 };
 
 export default config;
