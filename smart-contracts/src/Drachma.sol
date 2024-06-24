@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import {AccessControl} from "@openzeppelin/contracts/access/AccessControl.sol";
 
-import {SuperTokenBase} from "../lib/custom-supertokens/contracts/base/SuperTokenBase.sol";
+import {SuperTokenBase} from "@superfluid/custom-supertokens/contracts/base/SuperTokenBase.sol";
 
 /// @title Burnable and Mintable Pure Super Token
 /// @author jtriley.eth
