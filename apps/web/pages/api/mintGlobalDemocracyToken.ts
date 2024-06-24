@@ -5,7 +5,7 @@ const {
   THIRDWEB_ENGINE_ACCESS_TOKEN,
   THIRDWEB_BACKEND_WALLET_ADDRESS,
   THIRDWEB_BACKEND_SMART_ACCOUNT_ADDRESS,
-  TOKEN_CONTRACT_ADDRESS,
+  GLOBAL_DEMOCRACY_TOKEN_CONTRACT_ADDRESS,
 } = process.env;
 
 export default async function handler(
@@ -18,7 +18,7 @@ export default async function handler(
   const { toAddress } = req.body;
 
   // Define the thirdweb mint endpoint
-  const mintEndpoint = `${THIRDWEB_ENGINE_URL}/contract/base/${TOKEN_CONTRACT_ADDRESS}/erc20/mint-to?simulateTx=false`;
+  const mintEndpoint = `${THIRDWEB_ENGINE_URL}/contract/base/${GLOBAL_DEMOCRACY_TOKEN_CONTRACT_ADDRESS}/erc20/mint-to?simulateTx=false`;
   console.log("Mint endpoint:", mintEndpoint); // Log the mint endpoint
 
   // Make the POST request to the thirdweb mint endpoint
