@@ -24,10 +24,14 @@ export default function Hero() {
 
   return (
     <div className="hero">
-      <div className="wrapper">
-        <div className="hero-text">
-          <h1>World Association</h1>
-          <p>The democratic United Nations alternative.</p>
+      <div className="wrapper w-4/5 flex justify-center md:justify-between items-center flex-col md:flex-row gap-8">
+        <div className="hero-text text-center md:text-left">
+          <h1 className="pt-16 md:pt-0 text-5xl md:text-6xl">
+            World Association
+          </h1>
+          <p className="text-lg md:text-xl pt-4">
+            The democratic United Nations alternative.
+          </p>
           <div className="connect-button">
             {!account && (
               <ConnectButton
@@ -52,9 +56,10 @@ export default function Hero() {
         <div>
           {account ? (
             <div className="pop">
-              <h3>Join us anonymously</h3>
-              <div className="pop-content">
+              <h3 className="pb-2 text-center">Join us anonymously</h3>
+              <div className="pop-content flex flex-col items-center gap-4 p-6">
                 <button
+                  className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full"
                   onClick={() =>
                     launchZkMeWidget(account.address, fetchAccessToken)
                   }
@@ -75,7 +80,10 @@ export default function Hero() {
                   onSuccess={onSuccess}
                 >
                   {({ open }) => (
-                    <button onClick={open}>
+                    <button
+                      className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full"
+                      onClick={open}
+                    >
                       <img
                         src="/img/icons/worldcoin.png"
                         alt="Icon Description"
@@ -91,7 +99,7 @@ export default function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button>
+                  <button className="text-left items-center rounded-xl flex p-4 gap-4 justify-start">
                     <img
                       src="/img/icons/coinbase.png"
                       alt="Icon Description"
@@ -105,7 +113,7 @@ export default function Hero() {
             </div>
           ) : (
             <div className="connect-embed">
-              <h3>Sign in</h3>
+              <h3 className="pb-2 text-center">Sign in</h3>
               <ConnectEmbed
                 client={client}
                 chain={chain}
