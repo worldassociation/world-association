@@ -41,7 +41,7 @@ export default function Hero() {
                     color: "#fff",
                     padding: "16px",
                     alignItems: "center",
-                    width: "312px",
+                    width: "192px",
                   },
                 }}
                 connectModal={{ showThirdwebBranding: false }}
