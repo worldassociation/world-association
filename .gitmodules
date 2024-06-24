@@ -19,3 +19,6 @@
 [submodule "smart-contracts/lib/superfluid-protocol-monorepo"]
 	path = smart-contracts/lib/superfluid-protocol-monorepo
 	url = https://github.com/superfluid-finance/protocol-monorepo
+[submodule "smart-contracts/lib/contracts"]
+	path = smart-contracts/lib/contracts
+	url = https://github.com/thirdweb-dev/contracts
