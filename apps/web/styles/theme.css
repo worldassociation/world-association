@@ -5,6 +5,7 @@
 * {
   background-color: var(--blackground);
   color: var(--primary);
+  -webkit-font-smoothing: antialiased;
 }
 
 @font-face {
@@ -129,7 +130,6 @@
     "Apple Color Emoji",
     "Segoe UI Emoji",
     "Segoe UI Symbol";
-  font-weight: 400;
 
   .nx-rounded-xl {
     border-radius: 5px;
@@ -142,10 +142,12 @@ nav a span {
   padding: 0 16px;
 }
 
-/* Hero */
-.hero h1 {
-  font-family: "HarmonyOS Sans Bold";
+.nx-shadow-\[0_2px_4px_rgba\(0\,0\,0\,\.02\)\,0_1px_0_rgba\(0\,0\,0\,\.06\)\],
+.nx-shadow-lg {
+  box-shadow: none;
 }
+
+/* Hero */
 
 .hero-text p {
   font-family: "HarmonyOS Sans Light";
@@ -153,20 +155,15 @@ nav a span {
 
 .wrapper {
   min-height: calc(100svh - 128px);
-  margin: 0 auto;
 }
 
 .connect-button {
   display: none;
-}
-
-.pop {
-  width: 360px;
+  margin-top: 32px;
 }
 
 .pop-content {
   border: 1px solid var(--border);
-  border-radius: 20px;
 }
 
 .pop-content p {
@@ -175,7 +172,6 @@ nav a span {
 
 .pop-content button {
   border: 1px solid var(--border);
-  width: 312px;
   transition: border 200ms ease 0s;
 }
 
@@ -212,19 +208,10 @@ a.nx-underline {
 }
 
 /* Headings */
-
-h2 {
-  border: none;
-  font-family: "HarmonyOS Sans Bold";
-}
-
-h3 {
-  font-size: 1.25rem !important;
-  font-family: "HarmonyOS Sans Bold";
-}
-
+h1,
+h2,
+h3,
 h4 {
-  font-size: 1rem !important;
   font-family: "HarmonyOS Sans Bold";
 }
 
