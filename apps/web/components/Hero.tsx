@@ -6,10 +6,12 @@ import {
 } from "thirdweb/react";
 import { chain, client } from "../lib/constants";
 import "@zkmelabs/widget/dist/style.css";
-import { IDKitWidget, VerificationLevel } from "@worldcoin/idkit";
 import { verifyProof } from "../lib/verifyWorldIDProof";
 import { fetchAccessToken } from "../lib/fetchZkMeAccessToken";
 import { launchZkMeWidget } from "../lib/launchZkMeWidget";
+import WorldcoinWidget from "./WorldcoinWidget";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Hero() {
   const account = useActiveAccount();
@@ -58,69 +60,56 @@ export default function Hero() {
       </div>
       <div>
         {account ? (
-          <div className="w-[100vw] max-w-[406px] px-6">
-            <h3 className="md:pb-2 text-center text-[5vw]">
-              Join us anonymously
-            </h3>
-            <div
-              className="pop-content flex flex-col items-center gap-4 pt-6 md:rounded-[20px] md:p-6 border-0 md:border"
-              style={{ borderColor: "var(--border)" }}
-            >
-              <button
-                className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border"
+          <>
+            <div className="w-[100vw] max-w-[406px] px-6">
+              <h3 className="md:pb-2 text-center text-[5vw]">
+                Join us anonymously
+              </h3>
+              <div
+                className="pop-content flex flex-col items-center gap-4 pt-6 md:rounded-[20px] md:p-6 border-0 md:border"
                 style={{ borderColor: "var(--border)" }}
-                onClick={() =>
-                  launchZkMeWidget(account.address, fetchAccessToken)
-                }
               >
-                <img
-                  src="/img/icons/zkMe.png"
-                  alt="Icon Description"
-                  width="24"
-                  height="24"
+                <Button
+                  variant="outline"
+                  className="text-left flex gap-4 justify-start w-full hover:border-blue-500 hover:bg-transparent"
+                  onClick={() =>
+                    launchZkMeWidget(account.address, fetchAccessToken)
+                  }
+                >
+                  <img
+                    src="/img/icons/zkMe.png"
+                    alt="Icon Description"
+                    width="24"
+                    height="24"
+                  />
+                  <p>Join with zkMe</p>
+                </Button>
+                <WorldcoinWidget
+                  verifyProof={verifyProof}
+                  onSuccess={onSuccess}
                 />
-                <p>Join with zkMe</p>
-              </button>
-              <IDKitWidget
-                app_id={process.env.NEXT_PUBLIC_WLD_APP_ID as `app_${string}`}
-                action={process.env.NEXT_PUBLIC_WLD_ACTION!}
-                verification_level={VerificationLevel.Device}
-                handleVerify={verifyProof}
-                onSuccess={onSuccess}
-              >
-                {({ open }) => (
-                  <button
-                    className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border"
-                    style={{ borderColor: "var(--border)" }}
-                    onClick={open}
+                <Button
+                  asChild
+                  variant="outline"
+                  className="text-left flex gap-4 justify-start w-full hover:border-blue-600 hover:bg-transparent"
+                >
+                  <Link
+                    href="https://www.coinbase.com/onchain-verify"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
-                      src="/img/icons/worldcoin.png"
+                      src="/img/icons/coinbase.png"
                       alt="Icon Description"
                       width="24"
                       height="24"
                     />
-                    <p>Join with Worldcoin</p>
-                  </button>
-                )}
-              </IDKitWidget>
-              <a
-                href="https://www.coinbase.com/onchain-verify"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex text-left items-center rounded-xl p-4 gap-4 justify-start w-full border"
-                style={{ borderColor: "var(--border)" }}
-              >
-                <img
-                  src="/img/icons/coinbase.png"
-                  alt="Icon Description"
-                  width="24"
-                  height="24"
-                />
-                <p>Join with Coinbase</p>
-              </a>
+                    <p>Join with Coinbase</p>
+                  </Link>
+                </Button>
+              </div>
             </div>
-          </div>
+          </>
         ) : (
           <div className="hidden md:block">
             <h3 className="pb-2 text-center text-xl">Sign in</h3>

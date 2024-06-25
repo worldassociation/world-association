@@ -15,9 +15,9 @@ const HeaderConnectButton = () => {
       detailsButton={{
         style: {
           height: "52px",
-          color: "#090909",
+          color: "#1a1a1d",
           backgroundColor: "#ffffff",
-          borderColor: "#e5e7eb",
+          borderColor: "#e6e6eb",
         },
       }}
     />

@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ["class"],
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,44 +16,28 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        colors: {
-          "custom-blue": "#3b82f6",
-        },
+        background: "#ffffff",
+        foreground: "#020306",
+        card: "#ffffff",
+        "card-foreground": "#020306",
+        popover: "#ffffff",
+        "popover-foreground": "#020306",
+        primary: "#1a1a1d",
+        "primary-foreground": "#fcfcfc",
+        secondary: "#f2f2f5",
+        "secondary-foreground": "#1a1a1d",
+        muted: "#f2f2f5",
+        "muted-foreground": "#75767b",
+        accent: "#f2f2f5",
+        "accent-foreground": "#1a1a1d",
+        destructive: "#f44336",
+        "destructive-foreground": "#fcfcfc",
+        border: "#e6e6eb",
+        input: "#e6e6eb",
+        ring: "#1a1a1d",
       },
       borderRadius: {
+        DEFAULT: "1rem",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
