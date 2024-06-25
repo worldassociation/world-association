@@ -111,20 +111,19 @@ nav a span {
   box-shadow: none;
 }
 
+/* detailsButton */
+.css-2mxilq {
+  min-width: 140px !important;
+}
+
+.css-2mxilq:hover {
+  border-color: #3b82f6 !important;
+}
+
 /* Hero */
 
 .hero-text p {
   font-family: "HarmonyOS Sans Light";
-}
-
-.pop-content button,
-.pop-content a {
-  transition: border 200ms ease 0s !important;
-}
-
-.pop-content button:hover,
-.pop-content a:hover {
-  border-color: #3b82f6 !important;
 }
 
 #idkit-widget {
@@ -169,4 +168,8 @@ h4 {
 
 .nextra-toc .top-divider {
   margin-top: 1.5em;
+}
+
+.connectButtonHover:hover {
+  border-color: #3b82f6 !important;
 }
