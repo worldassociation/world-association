@@ -102,7 +102,7 @@
 
 /* Main nav */
 
-.nextra-banner-container span {
+.nextra-banner-container * {
   color: var(--primary-foreground);
 }
 
