@@ -127,7 +127,8 @@ nav a span {
 
 /* Hero */
 
-.hero-text p {
+.hero-text p,
+.card-content {
   font-family: "HarmonyOS Sans Light";
 }
 

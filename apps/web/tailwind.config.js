@@ -15,6 +15,19 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        "harmony-light": ['"HarmonyOS Sans Light"', "sans-serif"],
+        "harmony-light-italic": ['"HarmonyOS Sans Light Italic"', "sans-serif"],
+        "harmony-regular": ['"HarmonyOS Sans Regular"', "sans-serif"],
+        "harmony-italic": ['"HarmonyOS Sans Italic"', "sans-serif"],
+        "harmony-medium": ['"HarmonyOS Sans Medium"', "sans-serif"],
+        "harmony-medium-italic": [
+          '"HarmonyOS Sans Medium Italic"',
+          "sans-serif",
+        ],
+        "harmony-bold": ['"HarmonyOS Sans Bold"', "sans-serif"],
+        "harmony-bold-italic": ['"HarmonyOS Sans Bold Italic"', "sans-serif"],
+      },
       colors: {
         background: "#ffffff",
         foreground: "#020306",
