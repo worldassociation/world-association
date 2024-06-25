@@ -117,12 +117,14 @@ nav a span {
   font-family: "HarmonyOS Sans Light";
 }
 
-.pop-content p {
-  font-family: "HarmonyOS Sans Regular";
+.pop-content button,
+.pop-content a {
+  transition: border 200ms ease 0s !important;
 }
 
-.pop-content button {
-  transition: border 200ms ease 0s;
+.pop-content button:hover,
+.pop-content a:hover {
+  border-color: #3b82f6 !important;
 }
 
 #idkit-widget {

@@ -67,7 +67,7 @@ export default function Hero() {
               style={{ borderColor: "var(--border)" }}
             >
               <button
-                className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border hover:border-custom-blue"
+                className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border"
                 style={{ borderColor: "var(--border)" }}
                 onClick={() =>
                   launchZkMeWidget(account.address, fetchAccessToken)
@@ -90,7 +90,7 @@ export default function Hero() {
               >
                 {({ open }) => (
                   <button
-                    className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border hover:border-custom-blue"
+                    className="text-left items-center rounded-xl flex p-4 gap-4 justify-start w-full border"
                     style={{ borderColor: "var(--border)" }}
                     onClick={open}
                   >
@@ -108,7 +108,7 @@ export default function Hero() {
                 href="https://www.coinbase.com/onchain-verify"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex text-left items-center rounded-xl p-4 gap-4 justify-start w-full border hover:border-custom-blue"
+                className="inline-flex text-left items-center rounded-xl p-4 gap-4 justify-start w-full border"
                 style={{ borderColor: "var(--border)" }}
               >
                 <img
