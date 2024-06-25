@@ -35,7 +35,7 @@ export default function Hero() {
             <h1 className="text-[13vw] leading-snug pt-12 md:pt-0">
               World Association
             </h1>
-            <p className="text-[4.7vw] pt-2">
+            <p className="text-[4.7vw] text-[#666] pt-2">
               The democratic United Nations alternative.
             </p>
             <div className="block md:hidden mt-8">
@@ -64,7 +64,7 @@ export default function Hero() {
             <h1 className="text-[13vw] leading-snug pt-12 md:pt-0">
               Uniting humanity
             </h1>
-            <p className="text-[4.7vw] pt-2 max-w-[656px]">
+            <p className="text-[4.7vw] text-[#666] pt-2 max-w-[640px]">
               The World Association is an open-source global democracy
               experiment with an own digital currency that anyone can join
               completely anonymously.
@@ -75,32 +75,79 @@ export default function Hero() {
       <div>
         {account ? (
           <>
-            <div className="w-[100vw] max-w-[406px] mt-8 px-6 md:pr-0 md:pl-12">
+            <div className="w-[100vw] max-w-[406px] mt-8 md:mt-0 px-6 md:pr-0 md:pl-12">
               <Card>
                 <CardHeader>
-                  <CardTitle>Get started</CardTitle>
+                  <CardTitle className="text-center">Join us</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="card-content">
-                    Prove your personhood, join the Association, and get our
-                    official currency flow into your account every second.
+                  <p className="card-content text-center text-[14px] text-[#666]">
+                    Join us anonymously and get your basic income flowing into
+                    your account every second.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Button
+                    className="w-full h-[48px] text-[14px] bg-[#005563] hover:bg-[#004957] rounded-full"
+                    onClick={() =>
+                      launchZkMeWidget(account.address, fetchAccessToken)
+                    }
+                  >
+                    Prove your personhood
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+            <div className="w-[100vw] max-w-[406px] mt-4 px-6 md:pr-0 md:pl-12">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Experiment</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="card-content text-center text-[14px] text-[#666]">
+                    Create and vote on verifiably democratic global governance
+                    proposals.
                   </p>
                 </CardContent>
                 <CardFooter>
                   <Button
                     variant="outline"
-                    className="text-left flex gap-4 justify-start w-full hover:border-blue-500 hover:bg-transparent"
+                    className="w-full h-[48px] text-[14px] rounded-full"
                     onClick={() =>
-                      launchZkMeWidget(account.address, fetchAccessToken)
+                      window.open(
+                        "https://snapshot.org/#/worldassociation.eth",
+                        "_blank"
+                      )
                     }
                   >
-                    <img
-                      src="/img/icons/zkMe.png"
-                      alt="Icon Description"
-                      width="24"
-                      height="24"
-                    />
-                    <p>Join with zkMe</p>
+                    Open Snapshot
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+            <div className="w-[100vw] max-w-[406px] mt-4 px-6 md:pr-0 md:pl-12">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-center">Contribute</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="card-content text-center text-[14px] text-[#666]">
+                    Help us improve the World Association and get rewarded in
+                    our official currency.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Button
+                    variant="outline"
+                    className="w-full h-[48px] text-[14px] rounded-full"
+                    onClick={() =>
+                      window.open(
+                        "https://github.com/worldassociation/world-association",
+                        "_blank"
+                      )
+                    }
+                  >
+                    Open GitHub
                   </Button>
                 </CardFooter>
               </Card>
