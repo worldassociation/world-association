@@ -101,6 +101,11 @@
 }
 
 /* Main nav */
+
+.nextra-banner-container span {
+  color: var(--primary-foreground);
+}
+
 nav a span {
   font-family: "HarmonyOS Sans Medium";
   padding: 0 16px;
