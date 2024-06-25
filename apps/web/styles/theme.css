@@ -9,24 +9,6 @@
 }
 
 @font-face {
-  font-family: "HarmonyOS Sans Thin";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local("HarmonyOS Sans Thin"),
-    url("../public/fonts/HarmonyOS_Sans_Thin.woff") format("woff");
-}
-
-@font-face {
-  font-family: "HarmonyOS Sans Thin Italic";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local("HarmonyOS Sans Thin Italic"),
-    url("../public/fonts/HarmonyOS_Sans_Thin_Italic.woff") format("woff");
-}
-
-@font-face {
   font-family: "HarmonyOS Sans Light";
   font-style: normal;
   font-weight: normal;
@@ -98,24 +80,6 @@
     url("../public/fonts/HarmonyOS_Sans_Bold_Italic.woff") format("woff");
 }
 
-@font-face {
-  font-family: "HarmonyOS Sans Black";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local("HarmonyOS Sans Black"),
-    url("../public/fonts/HarmonyOS_Sans_Black.woff") format("woff");
-}
-
-@font-face {
-  font-family: "HarmonyOS Sans Black Italic";
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local("HarmonyOS Sans Black Italic"),
-    url("../public/fonts/HarmonyOS_Sans_Regular.woff") format("woff");
-}
-
 :root {
   font-family:
     "HarmonyOS Sans Regular",
@@ -153,30 +117,12 @@ nav a span {
   font-family: "HarmonyOS Sans Light";
 }
 
-.wrapper {
-  min-height: calc(100svh - 128px);
-}
-
-.connect-button {
-  display: none;
-  margin-top: 32px;
-}
-
-.pop-content {
-  border: 1px solid var(--border);
-}
-
 .pop-content p {
   font-family: "HarmonyOS Sans Regular";
 }
 
 .pop-content button {
-  border: 1px solid var(--border);
   transition: border 200ms ease 0s;
-}
-
-.pop-content button:hover {
-  border-color: #3b82f6;
 }
 
 #idkit-widget {
@@ -184,21 +130,17 @@ nav a span {
   position: fixed;
 }
 
-.css-2mxilq {
-  min-width: 140px !important;
-}
-
-@media screen and (max-width: 768px) {
-  .connect-button {
-    display: block;
+@media screen and (min-width: 425px) {
+  .hero-text h1 {
+    font-size: 64px !important;
   }
 
-  .connect-embed {
-    display: none;
+  .hero-text p {
+    font-size: 19px !important;
   }
 
-  .pop-content {
-    border: none;
+  h3 {
+    font-size: 20px !important;
   }
 }
 
@@ -213,31 +155,6 @@ h2,
 h3,
 h4 {
   font-family: "HarmonyOS Sans Bold";
-}
-
-/* Customize code styles */
-code,
-kbd,
-samp,
-pre {
-  font-family:
-    "JetBrains Mono",
-    ui-monospace,
-    SFMono-Regular,
-    Menlo,
-    Monaco,
-    Consolas,
-    Liberation Mono,
-    Courier New,
-    monospace !important;
-}
-
-code {
-  border-radius: 5px !important;
-}
-
-pre {
-  border: 1px solid var(--border);
 }
 
 /* Table of contents */
