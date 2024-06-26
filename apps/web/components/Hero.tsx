@@ -94,7 +94,7 @@ export default function Hero() {
                   </CardHeader>
                   <CardContent>
                     <p className="card-content text-[14px] text-[#666]">
-                      Join us and claim your basic income by proving only that
+                      Join us and claim your basic income simply by proving that
                       you are a real and unique human.
                     </p>
                   </CardContent>
