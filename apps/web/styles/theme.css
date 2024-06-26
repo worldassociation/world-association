@@ -106,6 +106,10 @@
   color: var(--primary-foreground);
 }
 
+.nextra-nav-container .nx-flex:hover {
+  opacity: 1;
+}
+
 nav a span {
   font-family: "HarmonyOS Sans Medium";
   padding: 0 16px;
