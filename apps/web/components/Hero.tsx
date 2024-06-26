@@ -76,10 +76,10 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 lg:pt-0">
                 Uniting humanity
               </h1>
-              <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[608px]">
+              <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[640px]">
                 The World Association is an open-source, verifiably democratic
-                global governance experiment that anyone can join completely
-                anonymously.
+                global governance experiment with an own digital currency that
+                anyone can join completely anonymously.
               </p>
             </>
           )}
@@ -120,7 +120,7 @@ export default function Hero() {
                     </CardHeader>
                     <CardContent>
                       <p className="card-content text-[14px] text-[#666]">
-                        Create and vote on proposals solving humanity's most
+                        Create and vote on proposals addressing humanity's most
                         pressing global challenges.
                       </p>
                     </CardContent>
