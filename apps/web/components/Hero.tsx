@@ -61,6 +61,7 @@ export default function Hero() {
                       color: "#fcfcfc",
                       padding: "16px",
                       alignItems: "center",
+                      height: "58px",
                       width: "calc(100vw - 48px)",
                       maxWidth: "400px",
                       borderRadius: "1rem",
@@ -92,7 +93,7 @@ export default function Hero() {
                     <CardTitle className="text-center">Join</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="card-content text-center text-[14px] text-[#666]">
+                    <p className="card-content text-[14px] text-[#666]">
                       Join us and claim your basic income by proving only that
                       you are a real and unique human.
                     </p>
@@ -109,14 +110,14 @@ export default function Hero() {
                   </CardFooter>
                 </Card>
               </div>
-              <div className="w-[100vw] lg:w-auto max-w-[406px] mt-4 lg:mt-0 px-6 lg:px-0">
+              <div className="w-[100vw] lg:w-auto max-w-[406px] px-6 lg:px-0">
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
                       <CardTitle className="text-center">Experiment</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="card-content text-center text-[14px] text-[#666]">
+                      <p className="card-content text-[14px] text-[#666]">
                         Create and vote on global governance proposals
                         verifiably democratically.
                       </p>
@@ -124,7 +125,6 @@ export default function Hero() {
                   </div>
                   <CardFooter>
                     <Button
-                      variant="outline"
                       className="w-full h-[48px] text-[14px] rounded-full"
                       onClick={() =>
                         window.open(
@@ -138,14 +138,14 @@ export default function Hero() {
                   </CardFooter>
                 </Card>
               </div>
-              <div className="w-[100vw] lg:w-auto max-w-[406px] mt-4 lg:mt-0 px-6 lg:px-0">
+              <div className="w-[100vw] lg:w-auto max-w-[406px] px-6 lg:px-0">
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
                       <CardTitle className="text-center">Contribute</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="card-content text-center text-[14px] text-[#666]">
+                      <p className="card-content text-[14px] text-[#666]">
                         Help us improve the World Association and get rewarded
                         in our official currency.
                       </p>
@@ -153,7 +153,6 @@ export default function Hero() {
                   </div>
                   <CardFooter>
                     <Button
-                      variant="outline"
                       className="w-full h-[48px] text-[14px] rounded-full"
                       onClick={() =>
                         window.open(
