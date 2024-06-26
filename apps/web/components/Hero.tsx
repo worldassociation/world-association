@@ -76,28 +76,30 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 lg:pt-0">
                 Uniting humanity
               </h1>
-              <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[640px]">
-                The World Association is an open-source global democracy
-                experiment with an own digital currency that anyone can join
-                completely anonymously.
+              <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[608px]">
+                The World Association is an open-source, verifiably democratic
+                global governance experiment that anyone can join completely
+                anonymously.
               </p>
             </>
           )}
         </div>
         <div>
           {account ? (
-            <div className="grid gap-6 lg:grid-cols-3 justify-center content-stretch xl:mt-4 2xl:mt-8">
+            <div className="grid gap-6 lg:grid-cols-3 justify-center content-stretch xl:mt-4">
               <div className="w-[100vw] lg:w-auto max-w-[406px] mt-4 lg:mt-0 px-6 lg:px-0">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="text-center">Join</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="card-content text-[14px] text-[#666]">
-                      Join us and claim your basic income simply by proving that
-                      you are a real and unique human.
-                    </p>
-                  </CardContent>
+                <Card className="flex flex-col justify-between h-full">
+                  <div>
+                    <CardHeader>
+                      <CardTitle className="text-center">Join</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="card-content text-[14px] text-[#666]">
+                        Join us and claim your basic income simply by proving
+                        that you are a real and unique human.
+                      </p>
+                    </CardContent>
+                  </div>
                   <CardFooter>
                     <Button
                       className="w-full h-[48px] text-[14px] bg-[#005563] hover:bg-[#005563]/90 rounded-full"
@@ -118,8 +120,8 @@ export default function Hero() {
                     </CardHeader>
                     <CardContent>
                       <p className="card-content text-[14px] text-[#666]">
-                        Create and vote on global governance proposals
-                        verifiably democratically.
+                        Create and vote on proposals solving humanity's most
+                        pressing global challenges.
                       </p>
                     </CardContent>
                   </div>
