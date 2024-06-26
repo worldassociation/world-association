@@ -85,7 +85,7 @@ export default function Hero() {
         </div>
         <div>
           {account ? (
-            <div className="grid gap-6 lg:grid-cols-3 justify-center content-stretch">
+            <div className="grid gap-6 lg:grid-cols-3 justify-center content-stretch xl:mt-4 2xl:mt-8">
               <div className="w-[100vw] lg:w-auto max-w-[406px] mt-4 lg:mt-0 px-6 lg:px-0">
                 <Card>
                   <CardHeader>
@@ -93,8 +93,8 @@ export default function Hero() {
                   </CardHeader>
                   <CardContent>
                     <p className="card-content text-center text-[14px] text-[#666]">
-                      Join us anonymously and get your basic income flowing into
-                      your account every second.
+                      Join us and claim your basic income by proving only that
+                      you are a real and unique human.
                     </p>
                   </CardContent>
                   <CardFooter>
