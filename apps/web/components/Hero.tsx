@@ -158,12 +158,12 @@ export default function Hero() {
                       className="w-full h-[48px] text-[14px] rounded-full"
                       onClick={() =>
                         window.open(
-                          "https://github.com/worldassociation/world-association/blob/main/README.md",
+                          "https://contribute.worldassociation.org",
                           "_blank"
                         )
                       }
                     >
-                      Open GitHub
+                      Discover opportunities
                     </Button>
                   </CardFooter>
                 </Card>
