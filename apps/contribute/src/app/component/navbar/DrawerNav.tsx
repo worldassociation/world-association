@@ -1,62 +1,62 @@
-'use client'
-import { Transition, Dialog } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+"use client";
+import { Transition, Dialog } from "@headlessui/react";
+import { Fragment, useState } from "react";
 
-import CloseIcon from '@/public/icon/CloseIcon'
-import './Navbar.css'
-import Link from 'next/link'
+import CloseIcon from "@/public/icon/CloseIcon";
+import "./Navbar.css";
+import Link from "next/link";
 
 export default function DrawerNav({
   open,
   onClose,
 }: {
-  open: boolean
-  onClose: () => void
+  open: boolean;
+  onClose: () => void;
 }) {
-  const [open2, setOpen2] = useState(false)
+  const [open2, setOpen2] = useState(false);
 
   const menu = [
-    { name: 'RetroPGF', link: 'https://app.optimism.io/retropgf-signup' },
-    { name: 'Bridge', link: 'https://app.optimism.io/bridge/deposit' },
-    { name: 'Airdrop', link: 'https://app.optimism.io/airdrops' },
-    { name: 'Builder', link: '/' },
-  ]
+    { name: "RetroPGF", link: "https://app.optimism.io/retropgf-signup" },
+    { name: "Bridge", link: "https://app.optimism.io/bridge/deposit" },
+    { name: "Airdrop", link: "https://app.optimism.io/airdrops" },
+    { name: "Builder", link: "/" },
+  ];
 
   const dropdownMenu = [
     {
-      title: 'OPTIMISM',
+      title: "OPTIMISM",
       items: [
-        { name: 'About Optimism', link: 'https://www.optimism.io/about' },
-        { name: 'Superchain', link: 'https://app.optimism.io/superchain' },
+        { name: "About Optimism", link: "https://www.optimism.io/about" },
+        { name: "Superchain", link: "https://app.optimism.io/superchain" },
       ],
     },
     {
-      title: 'GOVERNANCE',
+      title: "GOVERNANCE",
       items: [
-        { name: 'Optimist NFT', link: 'https://app.optimism.io/optimist-nft' },
-        { name: 'OP Collective', link: 'https://app.optimism.io/announcement' },
-        { name: 'About RetroPGF', link: 'https://app.optimism.io/retropgf' },
-        { name: 'Delegates', link: 'https://vote.optimism.io' },
-        { name: 'Forum', link: 'https://gov.optimism.io/' },
+        { name: "Optimist NFT", link: "https://app.optimism.io/optimist-nft" },
+        { name: "OP Collective", link: "https://app.optimism.io/announcement" },
+        { name: "About RetroPGF", link: "https://app.optimism.io/retropgf" },
+        { name: "Delegates", link: "https://vote.optimism.io" },
+        { name: "Forum", link: "https://gov.optimism.io/" },
       ],
     },
     {
-      title: 'ECOSYSTEM',
+      title: "ECOSYSTEM",
       items: [
-        { name: 'Apps', link: 'https://www.optimism.io/apps/all' },
-        { name: 'Quests', link: 'https://app.optimism.io/quests' },
+        { name: "Apps", link: "https://www.optimism.io/apps/all" },
+        { name: "Quests", link: "https://app.optimism.io/quests" },
       ],
     },
     {
-      title: 'DEVELOPERS',
+      title: "DEVELOPERS",
       items: [
-        { name: 'Superchain Faucet', link: 'https://app.optimism.io/faucet' },
-        { name: 'Documentation', link: 'https://docs.optimism.io/' },
-        { name: 'Github', link: 'https://github.com/ethereum-optimism/' },
-        { name: 'Bug bounty', link: 'https://immunefi.com/bounty/optimism/' },
+        { name: "Superchain Faucet", link: "https://app.optimism.io/faucet" },
+        { name: "Documentation", link: "https://docs.optimism.io/" },
+        { name: "Github", link: "https://github.com/ethereum-optimism/" },
+        { name: "Bug bounty", link: "https://immunefi.com/bounty/optimism/" },
       ],
     },
-  ]
+  ];
   return (
     <Transition appear show={open} as={Fragment}>
       <Dialog
@@ -85,9 +85,9 @@ export default function DrawerNav({
                 >
                   <Link
                     className="text-custom-red font-rubik !font-semibold "
-                    href="https://optimism.io/join"
+                    href="https://worldassociation.org"
                   >
-                    OPTIMISM
+                    World Association
                   </Link>
                   <div
                     className="cursor-pointer Hamburger flex"
@@ -198,5 +198,5 @@ export default function DrawerNav({
         </Transition>
       </Dialog>
     </Transition>
-  )
+  );
 }

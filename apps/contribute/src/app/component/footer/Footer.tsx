@@ -1,23 +1,23 @@
-import Heart from '@/public/icon/Heart'
-import Lightning from '@/public/icon/Lightning'
-import GitHubIcon from '@/public/icon/github-mark'
-import Twitter from '@/public/icon/Twitter'
+import Heart from "@/public/icon/Heart";
+import Lightning from "@/public/icon/Lightning";
+import GitHubIcon from "@/public/icon/github-mark";
+import Twitter from "@/public/icon/Twitter";
 interface FooterProps {
-  color?: string
+  color?: string;
 }
-const Footer = ({ color = 'bg-white' }: FooterProps) => {
+const Footer = ({ color = "bg-white" }: FooterProps) => {
   return (
     <footer id="footer" className={`w-full py-8 text-xs font-normal ${color}`}>
       <div className="flex flex-row justify-center items-center gap-2 mb-3">
         <a
-          href="https://github.com/ethereum-optimism/ecosystem-contributions"
+          href="https://github.com/blaisekonya/contribute"
           target="_blank"
           rel="noopener noreferrer"
         >
           <GitHubIcon></GitHubIcon>
         </a>
         <a
-          href="https://twitter.com/Optimism"
+          href="https://twitter.com/worldassociatio"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -48,7 +48,7 @@ const Footer = ({ color = 'bg-white' }: FooterProps) => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

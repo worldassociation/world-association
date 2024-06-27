@@ -55,9 +55,9 @@ const Navbar = () => {
         <div className="mr-12">
           <Link
             className="text-custom-black font-rubik !font-semibold"
-            href="https://optimism.io/join"
+            href="https://worldassociation.org/"
           >
-            WORLD ASSOCIATION
+            World Association
           </Link>
         </div>
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">

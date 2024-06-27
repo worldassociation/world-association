@@ -1,14 +1,14 @@
 {
-  "welcome-message": "Welcome to The Builder Ideas",
-  "welcome-desc": "Join the Optimism Collective: Shape the Future, Discover Opportunities, Get Involved, and Make an Impact Today. The Optimism Collective ecosystem has various pathways for you to be potentially rewarded for the work that you do.",
-  "button-text": "Start Exploring",
+  "welcome-message": "Welcome to the project ideas",
+  "welcome-desc": "Join the World Association: shape the future, discover opportunities, get involved, and make an impact today. The World Association ecosystem has various pathways for you to be potentially rewarded for the work that you do.",
+  "button-text": "Start exploring",
   "tab": [
     {
       "text": "Get Started",
       "index": 0
     },
     {
-      "text": "Builder Ideas",
+      "text": "Project Ideas",
       "index": 1
     }
   ]
