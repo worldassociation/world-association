@@ -2,7 +2,7 @@
 export default function BtnHeroSection({ text }: { text: string }) {
   const handleClickBtn = () => {
     window.scrollTo({
-      top: 450,
+      top: 504,
       behavior: "smooth",
     });
   };

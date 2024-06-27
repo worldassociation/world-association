@@ -59,7 +59,7 @@ const Navbar = () => {
             className="text-custom-black font-rubik !font-semibold"
             href="https://contribute.worldassociation.org"
           >
-            World Association Project Ideas
+            World Association Grants
           </Link>
         </div>
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">

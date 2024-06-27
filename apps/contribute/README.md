@@ -1,50 +1,35 @@
-# Get Inspired with Builder Ideas!
+# Get inspired by our project ideas!
 
-Welcome to the Optimism Collective Builder Ideas!
+Here you'll find various ideas that are intended to be a guiding light as you start contributing to the Association; from developer tooling to protocol experiments, and much more!
 
-Knowing where to start building can be overwhelming. Don’t worry though, we have you covered! Here you'll find various ideas that are intended to be a guiding light 💡as you start contributing to the Collective; from developer tooling to protocol experiments, and much more! These ideas have no guaranteed rewards, however by building them you may have a positive impact you can use to apply for Reto Funding. Builder ideas are here to provide guidance on what you could build for the Optimism Collective 💖
+Choose a project from the list, apply for a grant, and create impact!
 
-Choose an idea from the list, build it, create impact, and you might get rewarded via Retro Funding for your impact!
+## World Association Grants 101
 
-If you are looking for a grant, [you can find available grants](https://community.optimism.io/docs/governance/get-a-grant/) here.
+Currently, the Association runs grant rounds a couple times a year where projects that create the most impact are eligible for rewards.
 
-## Retro Funding 101
+We have exciting grants coming up!
 
-Retroactive Public Goods Funding (Retro Funding) is how you get rewarded for your impact to the Collective! The more impact you create onchain, the more you might expect to be rewarded! Retro Funding has already rewarded over 600 builders with more than 40 million OP.
+- Onchain Builders grants reward onchain builders for driving the adoption of Optimism
+- OP Stack grants will contributions to the OP stack
+- Governance grants will contributions which improve the capture resistance and resource allocation of Optimism Governance
+- Dev Tooling grants will impact of developer tooling in supporting Optimism
 
-Retro Funding is guided by a simple framework - we believe it's easier to assess what has been useful in the past, than what might be useful in the future. Currently, the Collective runs Retro Funding rounds a couple times a year where projects that create the most impact are eligible for rewards. For more info see the [Retro Funding blog post](https://optimism.mirror.xyz/nz5II2tucf3k8tJ76O6HWwvidLB6TLQXszmMnlnhxWU)!
+Only one question remains - how do you get started and begin building impact for the Association? The goal of this ideas list is to answer this question!
 
-<!---![image](./public/img/retro-flywheel.png) -->
+## How does the project idea list work?
 
-Together, Impact = Profit & Retro Funding create a flywheel where impact in the Collective is rewarded sustainably! 
-
-We have exciting rounds coming up!
-* The Onchain Builders round will reward onchain builders for driving the adoption of Optimism
-* The OP Stack round will reward contributions to the OP stack
-* The Governance round will reward contributions which improve the capture resistance and resource allocation of Optimism Governance
-* The Dev Tooling round will reward impact of developer tooling in supporting Optimism
-
-Only one question remains - how do you get started and begin building impact for the Collective? The goal of the Ideas List is to answer this question!
-
-## How does the Builder List work?
-
-The Builder List is composed of many ideas for projects! You can find relevant ideas by searching within specific project categories, difficulty, verticals or skill sets!
+You can find relevant ideas by searching within specific project categories, difficulty, verticals or skill sets!
 
 To get started, merely get inspired by an idea and start building impact!
 
-It’s important to remember that this list solely represents ideas, or projects to get started with Retro Funding! The goal is for you to get inspired and start building impact. Rewards are not guaranteed for anything built via an idea from the Ideas List.
+It’s important to remember that this list solely represents ideas, or projects to get you started! The goal is for you to get inspired and start building impact.
 
-### Looking for Proactive Grant Funding?
+## Applying for a grant:
 
-Ideas List projects are possible starting points for RetroPGF rounds, but if you’re looking for proactive grant funding, you can visit the Ecosystem Contributions page to view specific grants, which we call [Foundation Missions](https://github.com/ethereum-optimism/ecosystem-contributions/labels/Foundation%20Mission%20Request)! You can learn more about Missions by starting here.
+To apply for a grant follow the guide [here](./docs/claim-an-idea.md).
 
-As always, the Optimism Collective is a band of companies, communities, and citizens working together to build a sustainable future for Ethereum by rewarding impact! The Collective is motivated by a simple equation of Impact = Profit, where each builder is rewarded in proportion to the positive impact they create for the Collective. Get inspired by an idea and start building impact now!
-
-## Claiming an idea:
-
-To claim an idea follow the guide [here](./docs/claim-an-idea.md).
-
-## Support and Additional Resources
+## Support and additional resources
 
 We want to do everything we can to help you be successful while working on your contribution. Here you'll find various resources and communities that may help you complete a project. Please also feel free to ask for support directly in the [Optimism Developer Support GitHub](https://github.com/ethereum-optimism/developers).
 
@@ -53,7 +38,6 @@ We want to do everything we can to help you be successful while working on your 
 - [Optimism Discord](https://discord.gg/optimism)
 - [Optimism Governance Forum](https://gov.optimism.io)
 
-### Reference Material
+### Reference material
 
 - [Optimism Documentation](https://docs.optimism.io)
-- [Optimism Help Center](https://help.optimism.io)

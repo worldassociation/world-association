@@ -1,14 +1,14 @@
 {
-  "welcome-message": "Welcome to our project ideas",
-  "welcome-desc": "Contribute to the World Association: shape the future, discover opportunities, get involved, and make an impact today. The World Association ecosystem has various pathways for you to be potentially rewarded for the work that you do.",
+  "welcome-message": "Welcome to our grants page",
+  "welcome-desc": "Contribute to the World Association: discover opportunities, get involved, and shape the future today. The World Association ecosystem has various pathways for you to be rewarded for the work that you do.",
   "button-text": "Start exploring",
   "tab": [
     {
-      "text": "Get Started",
+      "text": "Get started",
       "index": 0
     },
     {
-      "text": "Project Ideas",
+      "text": "Grants",
       "index": 1
     }
   ]

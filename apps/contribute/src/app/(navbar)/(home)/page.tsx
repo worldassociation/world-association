@@ -101,12 +101,6 @@ export default async function Home() {
         </div>
 
         <div className="px-4 md:px-[4rem] lg:px-[8rem] py-[2.5rem] animate-slideup">
-          <div className="flex flex-col gap-1 ">
-            <h6 className="text-slate-500 text-lg font-rubik">Explore</h6>
-            <h4 className="text-slate-900 text-2xl font-semibold font-rubik">
-              Project Ideas
-            </h4>
-          </div>
           <div className="">
             <Cpage overViewData={overViewData} markdownContents={jsonData} />
           </div>
