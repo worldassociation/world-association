@@ -7,10 +7,12 @@ import Link from "next/link";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const menu = [
-    { name: "RetroPGF", link: "https://app.optimism.io/retropgf-signup" },
-    { name: "Bridge", link: "https://app.optimism.io/bridge/deposit" },
-    { name: "Airdrop", link: "https://app.optimism.io/airdrops" },
-    { name: "Builder", link: "/" },
+    { name: "App", link: "https://worldassociation.org/" },
+    { name: "Snapshot", link: "https://snapshot.org/#/worldassociation.eth" },
+    {
+      name: "GitHub",
+      link: "https://github.com/worldassociation/world-association",
+    },
   ];
 
   const dropdownMenu = [
@@ -55,9 +57,9 @@ const Navbar = () => {
         <div className="mr-12">
           <Link
             className="text-custom-black font-rubik !font-semibold"
-            href="https://worldassociation.org/"
+            href="https://contribute.worldassociation.org"
           >
-            World Association
+            World Association Project Ideas
           </Link>
         </div>
         <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">

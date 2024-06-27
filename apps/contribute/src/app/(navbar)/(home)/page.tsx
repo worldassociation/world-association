@@ -63,12 +63,12 @@ async function getOverViewData(id: string): Promise<LoadMarkDownType | string> {
 }
 
 export const metadata: Metadata = {
-  title: "Builder Ideas | World Association",
+  title: "Project Ideas | World Association",
   description: "Explore ideas for your next project.",
   openGraph: {
     type: "website",
     url: "https://contribute.worldassociation.org/",
-    title: "Builder Ideas | World Association",
+    title: "Project Ideas | World Association",
     description: "Explore ideas for your next project.",
     siteName: "worldassociation.org",
     images: [
