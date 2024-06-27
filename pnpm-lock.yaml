@@ -24,7 +24,7 @@ importers:
         specifier: ^1.13.3
         version: 1.13.3
 
-  apps/ecosystem-contributions-main:
+  apps/contribute:
     dependencies:
       '@headlessui/react':
         specifier: ^1.7.18
