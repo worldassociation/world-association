@@ -77,9 +77,9 @@ export default function Hero() {
                 Uniting humanity
               </h1>
               <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[640px]">
-                The World Association is an open-source, verifiably democratic
-                global governance experiment with an own digital currency that
-                anyone can join completely anonymously.
+                The World Association is an open-source global democracy
+                experiment with an own digital currency that anyone can join
+                completely anonymously.
               </p>
             </>
           )}
