@@ -89,7 +89,7 @@ export default function DrawerNav({
                     className="text-custom-black font-rubik !font-semibold "
                     href="https://worldassociation.org"
                   >
-                    World Association Grants
+                    WA Contributions
                   </Link>
                   <div
                     className="cursor-pointer Hamburger flex"

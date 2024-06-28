@@ -8,7 +8,7 @@ export default function HeroSection() {
         <h6 className="text-slate-900 text-5xl font-semibold font-rubik ">
           {header["welcome-message"]}
         </h6>
-        <p className="text-slate-600 text-base font-normal mx-8 md:mx-0 my-6 max-w-[45em]">
+        <p className="text-slate-600 text-base font-normal mx-4 md:mx-0 my-6 max-w-[45em]">
           {header["welcome-desc"]}
         </p>
         <div className="mt-2">

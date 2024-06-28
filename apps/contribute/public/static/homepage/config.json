@@ -1,6 +1,6 @@
 {
-  "welcome-message": "Welcome to our grants page",
-  "welcome-desc": "Contribute to the World Association: discover opportunities, get involved, and shape the future today. The World Association ecosystem has various pathways for you to be rewarded for the work that you do.",
+  "welcome-message": "Welcome to the World Association's contribution portal",
+  "welcome-desc": "Here, we invite visionaries, innovators, and dedicated individuals to join us in revolutionizing global cooperation and governance.",
   "button-text": "Start exploring",
   "tab": [
     {
@@ -8,7 +8,7 @@
       "index": 0
     },
     {
-      "text": "Grants",
+      "text": "Ideas",
       "index": 1
     }
   ]

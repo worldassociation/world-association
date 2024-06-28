@@ -1,43 +1,43 @@
-# Get inspired by our project ideas!
+# Contribute to the World Association
 
-Here you'll find various ideas that are intended to be a guiding light as you start contributing to the Association; from developer tooling to protocol experiments, and much more!
+The World Association thrives on the collaborative efforts of its members. This portal is designed to facilitate contributions from people around the world, offering various avenues for participation. Whether you’re a developer, researcher, activist, or simply someone passionate about making a difference, there’s a place for you here.
 
-Choose a project from the list, apply for a grant, and create impact!
+## Ideas
 
-## World Association Grants 101
+We believe that the best solutions come from diverse perspectives. Our platform allows you to both submit your innovative ideas and explore existing proposals. Whether it's a new feature, an enhancement, or a fresh approach, your ideas can help shape the future of the Association.
 
-Currently, the Association runs grant rounds a couple times a year where projects that create the most impact are eligible for rewards.
+### Search proposals
 
-We have exciting grants coming up!
+Explore existing proposals and collaborate with their creators. Find opportunities under the "Ideas" tab above and contribute your expertise to bring those ideas to life.
 
-- Onchain Builders grants reward onchain builders for driving the adoption of Optimism
-- OP Stack grants will contributions to the OP stack
-- Governance grants will contributions which improve the capture resistance and resource allocation of Optimism Governance
-- Dev Tooling grants will impact of developer tooling in supporting Optimism
+### Submit your ideas
 
-Only one question remains - how do you get started and begin building impact for the Association? The goal of this ideas list is to answer this question!
+Share your vision and proposals with our community. Every idea is valuable, and your contribution could be the spark that ignites significant change.
 
-## How does the project idea list work?
+## Grants and funding opportunities
 
-You can find relevant ideas by searching within specific project categories, difficulty, verticals or skill sets!
+The World Association offers grants to individuals and teams working on initiatives aligned with our mission.
 
-To get started, merely get inspired by an idea and start building impact!
+### Apply for a grant
 
-It’s important to remember that this list solely represents ideas, or projects to get you started! The goal is for you to get inspired and start building impact.
+Explore our funding opportunities and [submit your proposal](./docs/claim-an-idea.md) for consideration.
 
-## Applying for a grant:
+## Bug bounty program
 
-To apply for a grant follow the guide [here](./docs/claim-an-idea.md).
+Our bug bounty program incentivizes the identification and resolution of vulnerabilities in our systems. By participating, you contribute to the robustness and security of our platforms.
 
-## Support and additional resources
+### Report bugs
 
-We want to do everything we can to help you be successful while working on your contribution. Here you'll find various resources and communities that may help you complete a project. Please also feel free to ask for support directly in the [Optimism Developer Support GitHub](https://github.com/ethereum-optimism/developers).
+Identify vulnerabilities and earn rewards by reporting them.
 
-### Communities
+## Community engagement
 
-- [Optimism Discord](https://discord.gg/optimism)
-- [Optimism Governance Forum](https://gov.optimism.io)
+Join discussions, participate in forums, and collaborate with like-minded individuals from around the world.
 
-### Reference material
+- [World Association Discord]()
+- [World Association Telegram]()
+- [World Association Governance Forum]()
 
-- [Optimism Documentation](https://docs.optimism.io)
+# Join us in shaping the future
+
+The World Association is more than an organization; it is a movement towards a more democratic, inclusive, and resilient world. Your contributions are vital to this mission. Explore the various ways you can get involved, and be a part of the change you wish to see in the world.
