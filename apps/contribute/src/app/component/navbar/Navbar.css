@@ -1,7 +1,7 @@
 .text-custom-black {
   color: #020306;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
 }
 
@@ -26,7 +26,6 @@
 }
 
 .NavMenu:hover {
-  box-shadow: inset 0 -4px 0 #e0e2eb;
   color: #0f111a;
 }
 
@@ -129,7 +128,7 @@
   display: flex;
   padding: 16px 24px;
   align-items: center;
-  font-size: 24px;
+  font-size: 22px;
   color: #404454;
   border-radius: 8px;
   font-weight: 600;

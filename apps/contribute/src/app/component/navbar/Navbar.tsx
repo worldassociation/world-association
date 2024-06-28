@@ -53,8 +53,8 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="bg-white border-b sticky top-0 z-20  flex items-center lg:justify-start justify-between px-6 h-[4.5em]">
-        <div className="mr-12">
+      <div className="bg-white sticky top-0 z-20  flex items-center lg:justify-start justify-between px-6 h-[4.5em]">
+        <div className="lg:mr-12">
           <Link
             className="text-custom-black font-rubik !font-semibold"
             href="https://contribute.worldassociation.org"
@@ -62,7 +62,7 @@ const Navbar = () => {
             World Association Grants
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom ">
+        <div className="hidden lg:flex space-x-8 pr-2 items-center text-custom">
           <ul className="flex gap-8 !font-inter  ">
             {menu.map((item, index) => (
               <a href={item.link} key={index}>

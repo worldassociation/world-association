@@ -1,14 +1,14 @@
-import LinkIcon from '@/public/icon/LinkIcon'
-import { MarkDownData } from './Home'
-import Link from 'next/link'
-import { handleStatus } from './GridCard'
-import { newFilter } from '../Text'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
-import { categoryKeyAndValue } from '../Text'
+import LinkIcon from "@/public/icon/LinkIcon";
+import { MarkDownData } from "./Home";
+import Link from "next/link";
+import { handleStatus } from "./GridCard";
+import { newFilter } from "../Text";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import { categoryKeyAndValue } from "../Text";
 export default function ListCard({
   currentItems,
 }: {
-  currentItems: Omit<MarkDownData, 'contentHtml'>[]
+  currentItems: Omit<MarkDownData, "contentHtml">[];
 }) {
   return (
     <>
@@ -36,22 +36,22 @@ export default function ListCard({
                   <tr className="border" key={i}>
                     <th className="p-5 flex flex-col">
                       <div
-                        data-tooltip-id={item.contributions['execution-status']}
+                        data-tooltip-id={item.contributions["execution-status"]}
                         className="flex gap-1 items-center py-1 px-2 pr-2 mb-2.5 border rounded-full border-gray-200 cursor-pointer hover:bg-gray-100 bg-gray-50 w-fit"
                       >
-                        {handleStatus(item.contributions['execution-status'])}
+                        {handleStatus(item.contributions["execution-status"])}
                         <ReactTooltip
                           opacity={100}
-                          id={item.contributions['execution-status']}
+                          id={item.contributions["execution-status"]}
                           place="top"
                           variant="error"
                           style={{ zIndex: 99 }}
                           className="text-sm font-light"
                           content={
-                            newFilter['execution-status'].find(
+                            newFilter["execution-status"].find(
                               (elem) =>
                                 elem.name ===
-                                item.contributions['execution-status']
+                                item.contributions["execution-status"]
                             )?.description
                           }
                         />
@@ -77,7 +77,7 @@ export default function ListCard({
                           <p className="text-xs font-normal break-all line-clamp-1">
                             {categoryKeyAndValue[item.category]
                               ? categoryKeyAndValue[item.category]
-                              : item.category.replace('-', '')}
+                              : item.category.replace("-", "")}
                           </p>
                         </div>
                         <div className="inline-flex px-2 py-1 rounded-full bg-slate-100 hover:bg-slate-200/75 cursor-pointer w-fit">
@@ -103,7 +103,7 @@ export default function ListCard({
                       </h6>
                     </td>
                   </tr>
-                )
+                );
               })}
             </tbody>
           </table>
@@ -114,5 +114,5 @@ export default function ListCard({
         </h6>
       )}
     </>
-  )
+  );
 }

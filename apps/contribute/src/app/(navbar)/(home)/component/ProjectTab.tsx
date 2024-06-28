@@ -1,30 +1,30 @@
-import React from 'react'
-import { Pagination } from 'react-headless-pagination'
-import ListCard from './ListCard'
-import GridCard from './GridCard'
-import CheckBoxFilter from './CheckBoxFilter'
-import { CheckBoxStateType, MarkDownData, TabStateType } from './Home'
-import Input from '@/src/app/component/Input'
-import SearchIcon from '@/public/icon/SearchIcon'
-import SettingIcon from '@/public/icon/SettingsIcon'
-import SortDropDown from './SortDropdown'
-import GridIcon from '@/public/icon/GridIcon'
-import ListIcon from '@/public/icon/ListIcon'
-import { newFilter } from '../Text'
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import React from "react";
+import { Pagination } from "react-headless-pagination";
+import ListCard from "./ListCard";
+import GridCard from "./GridCard";
+import CheckBoxFilter from "./CheckBoxFilter";
+import { CheckBoxStateType, MarkDownData, TabStateType } from "./Home";
+import Input from "@/src/app/component/Input";
+import SearchIcon from "@/public/icon/SearchIcon";
+import SettingIcon from "@/public/icon/SettingsIcon";
+import SortDropDown from "./SortDropdown";
+import GridIcon from "@/public/icon/GridIcon";
+import ListIcon from "@/public/icon/ListIcon";
+import { newFilter } from "../Text";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 interface ProjectTabProps {
-  state: TabStateType
-  setState: React.Dispatch<React.SetStateAction<TabStateType>>
-  checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
-  currentPage: number
-  currentItems: Omit<MarkDownData, 'contentHtml'>[]
-  pageCount: number
-  handlePageClick: (page: number) => void
-  handleClearFilter: () => void
-  search: string
-  handleSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void
+  state: TabStateType;
+  setState: React.Dispatch<React.SetStateAction<TabStateType>>;
+  checkBox: CheckBoxStateType;
+  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void;
+  currentPage: number;
+  currentItems: Omit<MarkDownData, "contentHtml">[];
+  pageCount: number;
+  handlePageClick: (page: number) => void;
+  handleClearFilter: () => void;
+  search: string;
+  handleSearchChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 export default function ProjectTab({
   state,
@@ -53,7 +53,7 @@ export default function ProjectTab({
               Icon={<SearchIcon />}
               value={search}
               onChange={handleSearchChange}
-              className="border placeholder-slate-500 bg-white text-slate-500 focus:ring w-full px-1 py-1.5 rounded-full min-h-[40px]"
+              className="border placeholder-slate-500 bg-white text-slate-500 w-full px-1 py-1.5 rounded-full min-h-[40px]"
               placeholder="Search Project"
             />
           </div>
@@ -62,7 +62,7 @@ export default function ProjectTab({
           <div
             onClick={() => setState((prev) => ({ ...prev, drawer: true }))}
             className={`lg:hidden flex min-w-[44px] min-h-[40px] max-w-[44px] max-h-[40px] items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${
-              state.drawer && 'bg-gray-50'
+              state.drawer && "bg-gray-50"
             }`}
           >
             <SettingIcon className="" />
@@ -81,13 +81,13 @@ export default function ProjectTab({
             <div className="hidden lg:flex gap-2 border p-1.5  rounded-full h-10">
               <div
                 className={`px-1 ${
-                  state.view === 'g' &&
-                  'bg-gray-100 rounded-tl-xl rounded-bl-xl rounded-br-sm rounded-tr-sm'
+                  state.view === "g" &&
+                  "bg-gray-100 rounded-tl-xl rounded-bl-xl rounded-br-sm rounded-tr-sm"
                 }`}
-                onClick={() => setState((prev) => ({ ...prev, view: 'g' }))}
+                onClick={() => setState((prev) => ({ ...prev, view: "g" }))}
               >
                 <GridIcon
-                  fill={state.view === 'g' ? '#161616' : '#94A3B8'}
+                  fill={state.view === "g" ? "#161616" : "#94A3B8"}
                   className="cursor-pointer block"
                 />
               </div>
@@ -96,13 +96,13 @@ export default function ProjectTab({
 
               <div
                 className={`px-1 ${
-                  state.view === 'l' &&
-                  'bg-gray-100 rounded-tl-sm rounded-bl-sm rounded-br-xl rounded-tr-xl'
+                  state.view === "l" &&
+                  "bg-gray-100 rounded-tl-sm rounded-bl-sm rounded-br-xl rounded-tr-xl"
                 }`}
-                onClick={() => setState((prev) => ({ ...prev, view: 'l' }))}
+                onClick={() => setState((prev) => ({ ...prev, view: "l" }))}
               >
                 <ListIcon
-                  fill={state.view === 'l' ? '#161616' : '#94A3B8'}
+                  fill={state.view === "l" ? "#161616" : "#94A3B8"}
                   className="cursor-pointer block"
                 />
               </div>
@@ -120,12 +120,12 @@ export default function ProjectTab({
       <div className="hidden lg:flex gap-2 items-center flex-wrap mt-4">
         <div
           onClick={() => {
-            state.view === 'g'
+            state.view === "g"
               ? setState((prev) => ({ ...prev, filter: !prev.filter }))
-              : setState((prev) => ({ ...prev, dialog: true, filter: false }))
+              : setState((prev) => ({ ...prev, dialog: true, filter: false }));
           }}
           className={`flex h-10 items-center gap-2 border  rounded-full px-3 py-2 cursor-pointer hover:bg-gray-100 ${
-            state.filter && 'bg-gray-50'
+            state.filter && "bg-gray-50"
           }`}
         >
           <SettingIcon className="" />
@@ -144,8 +144,8 @@ export default function ProjectTab({
                         (key) =>
                           checkBox[key as keyof CheckBoxStateType].length === 0
                       )
-                        ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
-                        : 'text-slate-900 border'
+                        ? "bg-secondaryRed text-primaryRed border-secondaryRed"
+                        : "text-slate-900 border"
                     }
                     `}
           onClick={handleClearFilter}
@@ -160,7 +160,7 @@ export default function ProjectTab({
                 ░█▄▄█ ░█─░█ ░█▄▄▀ ░█▄▄█ ░█▄▄▄
 
                 */}
-        {newFilter['category'].map((item, i) => (
+        {newFilter["category"].map((item, i) => (
           <div
             data-tooltip-id={item.id}
             key={i}
@@ -169,21 +169,21 @@ export default function ProjectTab({
                     hover:bg-secondaryRed hover:text-primaryRed hover:border hover:border-primaryRed
                     border rounded-full px-3 py-2 cursor-pointer transition-colors self-center shrink-0
                     ${
-                      checkBox['Category'].some(
+                      checkBox["Category"].some(
                         (elem) =>
                           elem ===
                           newFilter.category.find((elem) => elem.id === item.id)
                             ?.id
                       )
-                        ? 'bg-secondaryRed text-primaryRed border-secondaryRed'
-                        : 'text-slate-900 border'
+                        ? "bg-secondaryRed text-primaryRed border-secondaryRed"
+                        : "text-slate-900 border"
                     }
                     `}
             onClick={() => {
               handleChangeCheckBox(
-                'Category' as keyof CheckBoxStateType,
+                "Category" as keyof CheckBoxStateType,
                 item.id
-              )
+              );
             }}
           >
             <p className=" text-sm font-normal ">{item.name}</p>
@@ -208,7 +208,7 @@ export default function ProjectTab({
                 ░█▄▄█ ░█─░█ ──░█── ░█▄▄▄█ ─▀▄▄▀ ─░█──
             */}
       <div className="mt-[2.5rem] relative animate-slideup">
-        {state.view === 'g' ? (
+        {state.view === "g" ? (
           <div className="animate-slideleft flex gap-6">
             {/*  
                             ░█▀▀█ ░█─░█ ░█▀▀▀ ░█▀▀█ ░█─▄▀ ░█▀▀█ ░█▀▀▀█ ▀▄░▄▀ 
@@ -230,14 +230,14 @@ export default function ProjectTab({
               {currentItems.length !== 0 ? (
                 currentItems.map((item, i) => {
                   // console.log(item)
-                  if (item['contributions']['execution-status'] == '') {
-                    item['contributions']['execution-status'] = 'Not Started'
+                  if (item["contributions"]["execution-status"] == "") {
+                    item["contributions"]["execution-status"] = "Not Started";
                   }
                   return (
                     <div className="" key={i}>
                       <GridCard data={item} />
                     </div>
-                  )
+                  );
                 })
               ) : (
                 <h6 className="col-span-1 lg:col-span-2 xl:col-span-3 text-xl font-medium text-gray-500 text-center w-full">
@@ -302,5 +302,5 @@ export default function ProjectTab({
         )}
       </div>
     </div>
-  )
+  );
 }

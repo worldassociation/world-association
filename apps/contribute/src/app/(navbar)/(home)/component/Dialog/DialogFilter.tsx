@@ -1,23 +1,23 @@
-'use client'
-import { Dialog, Transition } from '@headlessui/react'
-import { Fragment } from 'react'
-import CloseIcon from '@/public/icon/CloseIcon'
-import Checkbox from '@/src/app/component/Checkbox/Checkbox'
-import { CheckBoxStateType } from '../Home'
+"use client";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
+import CloseIcon from "@/public/icon/CloseIcon";
+import Checkbox from "@/src/app/component/Checkbox/Checkbox";
+import { CheckBoxStateType } from "../Home";
 import {
   CheckBoxCategory,
   CheckBoxEffort,
   CheckBoxExecutionStatus,
   CheckBoxSkillsets,
-} from '../Filter/CheckBox'
-import { newFilter } from '../../Text'
+} from "../Filter/CheckBox";
+import { newFilter } from "../../Text";
 
 interface DialogFilterProps {
-  open: boolean
-  onClose: () => void
-  checkBox: CheckBoxStateType
-  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void
-  handleClearFilter: () => void
+  open: boolean;
+  onClose: () => void;
+  checkBox: CheckBoxStateType;
+  handleChangeCheckBox: (name: keyof CheckBoxStateType, value: string) => void;
+  handleClearFilter: () => void;
 }
 export default function DialogFilter({
   open,
@@ -57,7 +57,7 @@ export default function DialogFilter({
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-white  p-4 text-left align-middle shadow-xl transition-all max-h-[70vh] overflow-y-auto">
+                <Dialog.Panel className="w-full max-w-5xl transform overflow-hidden rounded-2xl bg-white p-4 text-left align-middle shadow-xl transition-all max-h-[70vh] overflow-y-auto">
                   <Dialog.Title as="div" className="flex justify-between ">
                     <div />
                     <h6 className="text-base text-gray-900 font-bold">
@@ -72,7 +72,7 @@ export default function DialogFilter({
 
                   <div className="flex">
                     <div className=" flex flex-wrap gap-8">
-                      <div className="flex flex-col gap-1  ">
+                      <div className="flex flex-col gap-1">
                         <h6 className="text-xs font-medium text-gray-400 self-center">
                           Execution Status
                         </h6>
@@ -82,7 +82,7 @@ export default function DialogFilter({
                         />
                       </div>
 
-                      <div className={`flex flex-col gap-1 `}>
+                      <div className={`flex flex-col gap-1`}>
                         <h6 className="text-xs font-medium text-gray-400 mb-2">
                           Effort
                         </h6>
@@ -92,7 +92,7 @@ export default function DialogFilter({
                         />
                       </div>
 
-                      <div className="flex flex-col gap-1  ">
+                      <div className="flex flex-col gap-1">
                         <h6 className="text-xs font-medium text-gray-400 mb-2">
                           Skill Set
                         </h6>
@@ -118,22 +118,22 @@ export default function DialogFilter({
                         </h6>
                         <div className="grid grid-cols-2 gap-6">
                           <div className="flex flex-col gap-1">
-                            {newFilter['labels']
+                            {newFilter["labels"]
                               .slice(
                                 0,
-                                Math.ceil(newFilter['labels'].length / 2)
+                                Math.ceil(newFilter["labels"].length / 2)
                               )
                               .map((item, i) => (
                                 <Checkbox
                                   key={i}
                                   label={item}
                                   value={item}
-                                  checked={checkBox['Label'].includes(item)}
+                                  checked={checkBox["Label"].includes(item)}
                                   onChange={(
                                     e: React.ChangeEvent<HTMLInputElement>
                                   ) =>
                                     handleChangeCheckBox(
-                                      'Label' as keyof CheckBoxStateType,
+                                      "Label" as keyof CheckBoxStateType,
                                       e.target.value
                                     )
                                   }
@@ -141,19 +141,19 @@ export default function DialogFilter({
                               ))}
                           </div>
                           <div className="flex flex-col gap-1">
-                            {newFilter['labels']
-                              .slice(Math.ceil(newFilter['labels'].length / 2))
+                            {newFilter["labels"]
+                              .slice(Math.ceil(newFilter["labels"].length / 2))
                               .map((item, i) => (
                                 <Checkbox
                                   key={i}
                                   label={item}
                                   value={item}
-                                  checked={checkBox['Label'].includes(item)}
+                                  checked={checkBox["Label"].includes(item)}
                                   onChange={(
                                     e: React.ChangeEvent<HTMLInputElement>
                                   ) =>
                                     handleChangeCheckBox(
-                                      'Label' as keyof CheckBoxStateType,
+                                      "Label" as keyof CheckBoxStateType,
                                       e.target.value
                                     )
                                   }
@@ -188,5 +188,5 @@ export default function DialogFilter({
         </Dialog>
       </Transition>
     </div>
-  )
+  );
 }

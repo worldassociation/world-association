@@ -16,10 +16,12 @@ export default function DrawerNav({
   const [open2, setOpen2] = useState(false);
 
   const menu = [
-    { name: "RetroPGF", link: "https://app.optimism.io/retropgf-signup" },
-    { name: "Bridge", link: "https://app.optimism.io/bridge/deposit" },
-    { name: "Airdrop", link: "https://app.optimism.io/airdrops" },
-    { name: "Builder", link: "/" },
+    { name: "App", link: "https://worldassociation.org/" },
+    { name: "Snapshot", link: "https://snapshot.org/#/worldassociation.eth" },
+    {
+      name: "GitHub",
+      link: "https://github.com/worldassociation/world-association",
+    },
   ];
 
   const dropdownMenu = [
@@ -68,7 +70,7 @@ export default function DrawerNav({
         <div className="fixed inset-0 bg-black/25" />
 
         <div className="fixed inset-0 overflow-y-auto h-full w-screen">
-          <div className="flex h-full  items-center justify-center text-center ">
+          <div className="flex h-full items-center justify-center text-center ">
             <Transition.Child
               as={Fragment}
               enter="duration-500"
@@ -78,16 +80,16 @@ export default function DrawerNav({
               leaveFrom=""
               leaveTo=""
             >
-              <Dialog.Panel className="w-full h-full transform overflow-hidden bg-white  text-left align-middle shadow-xl transition-all  overflow-y-auto">
+              <Dialog.Panel className="w-full h-full transform overflow-hidden bg-white text-left align-middle shadow-xl transition-all overflow-y-auto">
                 <Dialog.Title
                   as="div"
-                  className="flex justify-between items-center px-6 h-[4.5em] mr-4"
+                  className="flex justify-between items-center px-6 h-[4.5em]"
                 >
                   <Link
-                    className="text-custom-red font-rubik !font-semibold "
+                    className="text-custom-black font-rubik !font-semibold "
                     href="https://worldassociation.org"
                   >
-                    World Association
+                    World Association Grants
                   </Link>
                   <div
                     className="cursor-pointer Hamburger flex"
@@ -124,7 +126,6 @@ export default function DrawerNav({
                       </svg>
                     </a>
                   </li> */}
-                  <hr className="my-3 border-gray-200 m-0  w-full" />
                 </ul>
               </Dialog.Panel>
             </Transition.Child>
