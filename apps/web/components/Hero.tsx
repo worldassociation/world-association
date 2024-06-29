@@ -46,7 +46,7 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 md:pt-0">
                 World Association
               </h1>
-              <p className="text-[4.7vw] text-[#555] text-[19px] pt-2">
+              <p className="text-[4.7vw] text-[#555] !text-[19px] pt-2">
                 The democratic United Nations alternative.
               </p>
               <div className="block md:hidden mt-8">
@@ -76,7 +76,7 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 lg:pt-0">
                 Uniting humanity
               </h1>
-              <p className="text-[4.7vw] text-[#555] text-[18px] pt-2 pb-4 max-w-[640px]">
+              <p className="text-[4.7vw] text-[#555] !text-[18px] pt-2 pb-4 max-w-[640px]">
                 The World Association is an open-source global democracy
                 experiment with an own digital currency that anyone can join
                 completely anonymously.
