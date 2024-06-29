@@ -46,7 +46,7 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 md:pt-0">
                 World Association
               </h1>
-              <p className="text-[4.7vw] text-[#666] pt-2">
+              <p className="text-[4.7vw] text-[#555] text-[19px] pt-2">
                 The democratic United Nations alternative.
               </p>
               <div className="block md:hidden mt-8">
@@ -76,7 +76,7 @@ export default function Hero() {
               <h1 className="text-[13vw] leading-snug pt-12 lg:pt-0">
                 Uniting humanity
               </h1>
-              <p className="text-[4.7vw] text-[#666] pt-2 pb-4 max-w-[640px]">
+              <p className="text-[4.7vw] text-[#555] text-[18px] pt-2 pb-4 max-w-[640px]">
                 The World Association is an open-source global democracy
                 experiment with an own digital currency that anyone can join
                 completely anonymously.
@@ -91,10 +91,10 @@ export default function Hero() {
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
-                      <CardTitle className="text-center">Join</CardTitle>
+                      <CardTitle>Join</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="card-content text-[14px] text-[#666]">
+                      <p className="card-content text-[14px] text-[#555]">
                         Join us and claim your basic income simply by proving
                         that you are a real and unique human.
                       </p>
@@ -116,10 +116,10 @@ export default function Hero() {
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
-                      <CardTitle className="text-center">Experiment</CardTitle>
+                      <CardTitle>Experiment</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="card-content text-[14px] text-[#666]">
+                      <p className="card-content text-[14px] text-[#555]">
                         Create and vote on proposals addressing humanity's most
                         pressing global challenges.
                       </p>
@@ -144,10 +144,10 @@ export default function Hero() {
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
-                      <CardTitle className="text-center">Contribute</CardTitle>
+                      <CardTitle>Contribute</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="card-content text-[14px] text-[#666]">
+                      <p className="card-content text-[14px] text-[#555]">
                         Help us improve the World Association and get rewarded
                         in our official currency.
                       </p>
