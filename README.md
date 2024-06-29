@@ -10,27 +10,21 @@ We are currently working on initiatives like
 - an anonymous yet verifiably democratic online voting system, and
 - a global basic income program, streamed in our digital currency, the world drachma.
 
-This repository has three main folders:
+This repository has two main folders:
 
 ```bash
 .
 ├── apps
+│   │   contribute
 │   └── web
-├── organization
-│   ├── constitution
-│   └── roadmap
-└── smart-contracts
-    └── src
-        ├── Constitution.sol
-        ├── Drachma.sol
-        └── GlobalDemocracyToken.sol
+└── organization
+    │   stitution
+    └── roadmap
 ```
 
 The [apps](/apps) folder contains all our frontend code.
 
 The [organization](/organization) folder contains all our governing documents.
-
-The [smart-contracts](/smart-contracts) folder contains all our Solidity code.
 
 ## Code of Conduct
 
