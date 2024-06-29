@@ -73,10 +73,10 @@ export default function Hero() {
             </>
           ) : (
             <div className="flex flex-col items-center">
-              <h1 className="text-[12vw] leading-tight pt-24 lg:pt-0">
+              <h1 className="text-[11vw] leading-tight pt-24 lg:pt-0">
                 Democritizing global governance
               </h1>
-              <p className="text-[#555] pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[640px]">
+              <p className="text-[#555] px-6 pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[640px]">
                 Join us anonymously, get your basic income, and start
                 experimenting with global democracy.
               </p>
