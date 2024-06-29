@@ -77,8 +77,8 @@ export default function Hero() {
                 Democritizing global governance
               </h1>
               <p className="text-[#555] pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[640px]">
-                Join us anonymously, experiment with global democracy, and start
-                collecting our official currency, the world drachma.
+                Join us anonymously, get your basic income, and start
+                experimenting with global democracy.
               </p>
             </div>
           )}
