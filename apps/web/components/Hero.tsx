@@ -72,16 +72,15 @@ export default function Hero() {
               </div>
             </>
           ) : (
-            <>
-              <h1 className="text-[13vw] leading-snug pt-12 lg:pt-0">
-                Uniting humanity
+            <div className="flex flex-col items-center">
+              <h1 className="text-[12vw] leading-tight pt-24 lg:pt-0">
+                Democritizing global governance
               </h1>
-              <p className="text-[4.7vw] text-[#555] !text-[18px] pt-2 pb-4 max-w-[640px]">
-                The World Association is an open-source global democracy
-                experiment with an own digital currency that anyone can join
-                completely anonymously.
+              <p className="text-[#555] pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[640px]">
+                Join us anonymously, experiment with global democracy, and start
+                collecting our official currency, the world drachma.
               </p>
-            </>
+            </div>
           )}
         </div>
         <div>
@@ -149,7 +148,7 @@ export default function Hero() {
                     <CardContent>
                       <p className="card-content text-[14px] text-[#555]">
                         Help us improve the World Association and get rewarded
-                        in our official currency.
+                        in our digital currency.
                       </p>
                     </CardContent>
                   </div>
