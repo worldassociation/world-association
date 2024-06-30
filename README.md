@@ -18,7 +18,7 @@ This repository has two main folders:
 │   │   contribute
 │   └── web
 └── organization
-    │   stitution
+    │   constitution
     └── roadmap
 ```
 

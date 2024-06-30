@@ -91,7 +91,7 @@ export default function Hero() {
                 <Card className="flex flex-col justify-between h-full">
                   <div>
                     <CardHeader>
-                      <CardTitle>Join</CardTitle>
+                      <CardTitle>Join us</CardTitle>
                     </CardHeader>
                     <CardContent>
                       <p className="card-content text-[14px] text-[#555]">
