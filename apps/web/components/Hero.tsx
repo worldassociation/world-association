@@ -74,9 +74,9 @@ export default function Hero() {
           ) : (
             <div className="flex flex-col items-center">
               <h1 className="text-[11vw] leading-tight pt-24 lg:pt-0">
-                Uniting humanity
+                The future of global governance
               </h1>
-              <p className="text-[#555] px-6 pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[632px]">
+              <p className="text-[#555] px-6 pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[800px]">
                 The World Association is a democratic organization open to all.
                 Join us anonymously, get your basic income, and help us solve
                 humanity's most pressing global challenges.
