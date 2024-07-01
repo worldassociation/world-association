@@ -79,7 +79,7 @@ export default function Hero() {
               <p className="text-[#555] px-6 pt-4 lg:pt-2 pb-16 lg:pb-4 max-w-[800px]">
                 The World Association is a democratic organization open to all.
                 Join us anonymously, get your basic income, and help us solve
-                humanity's most pressing global challenges.
+                humanity’s most pressing global challenges.
               </p>
             </div>
           )}
