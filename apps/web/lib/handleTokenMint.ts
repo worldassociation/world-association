@@ -13,7 +13,7 @@ export const handleMint = async (account: Account) => {
     }),
   };
 
-  await fetch("/api/mintGlobalDemocracyToken", options)
+  await fetch("/api/mintToken", options)
     .then((response) => {
       if (response.status === 200) {
         toast({

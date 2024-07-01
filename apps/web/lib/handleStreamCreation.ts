@@ -13,7 +13,7 @@ export const handleMint = async (account: Account) => {
     }),
   };
 
-  await fetch("/api/createBasicIncomeStream", options)
+  await fetch("/api/createStream", options)
     .then((response) => {
       if (response.status === 200) {
         toast({
